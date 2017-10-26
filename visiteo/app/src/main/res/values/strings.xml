@@ -1,0 +1,641 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Visitéo</string>
+    <string name="img">idOperaPhoto</string>
+    <string name="loading">Chargement en cours</string>
+    <string name="loading_rooms">Une mise à jour est en cours.</string>
+    <string name="nointernet">Aucune connection internet !</string>
+    <string name="camera_error">Rear Facing Camera Unavailable !</string>
+    <string name="nodata">Aucune donnée de disponible !</string>
+    <string name="error_email">Erreur email !</string>
+    <string name="yes">Oui</string>
+    <string name="no">Non</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Annuler</string>
+    <string name="valider">VALIDER</string>
+    <string name="fermer">FERMER</string>
+    <string name="dupliquer_etat">DUPLIQUER</string>
+    <string name="clear">EFFACER</string>
+    <string name="error">Accès refusé</string>
+    <string name="singature_error">Impossible de charger la carte SD, veuillez vérifier qu\'elle soit bien connectée</string>
+    <string name="sing_valider">Votre signature a bien été validée</string>
+    <string name="sing_remove">Voulez-vous vraiment effacer cette signature ?</string>
+    <string name="code_hint">Code d\'authentification</string>
+
+    <!-- Title -->
+    <string name="tit_planning">Planning</string>
+    <string name="tit_ordermission">Ordre de Mission</string>
+    <string name="tit_etatdes">Etat des lieux n° </string>
+    <string name="tit_entree">Entrée</string>
+    <string name="tit_srtie">Sortie</string>
+
+    <!-- Splash -->
+    <string name="spl_connection">Connecté à Internet</string>
+
+    <!-- Login -->
+    <string name="app_description">Le logiciel d\'état des lieux</string>
+    <string name="log_licence">Licence</string>
+    <string name="alert_dialog_offline">Hors connexion</string>
+    <string name="alert_dialog_refus_commentaire">Commentaire refus de signature</string>
+    <string name="alert_dialog_licence">Possèdez-vous un code licence ?</string>
+    <string name="alert_dialog_code_offline">Aucune connection internet. Possèdez-vous un code d\'authentification ?</string>
+    <string name="error_code_offline">Le code est invalide</string>
+    <string name="error_no_user_in_database">L\'expert avec lequel vous souhaitez vous connecter ne dispose pas de mission en mode hors-ligne</string>
+    <string name="error_empty_licence">Le champ de texte ne doit pas être vide</string>
+    <string name="log_identifiant">Identifiant</string>
+    <string name="log_passe">Mot de Passe</string>
+    <string name="log_valider">Valider</string>
+    <string name="edit_licence">Éditer le code licence</string>
+    <string name="no_licence">Veuillez entrer un code licence.</string>
+    <string name="no_info">Veuillez remplir les champs Identifiants et mot de passe.</string>
+    <string name="invalid_info">Mauvais nom d\'utilisateur, mot de passe ou identifiant de licence</string>
+    <string name="last_connection">La dernière connexion remonte à plus de 31 jours.</string>
+    <string name="account_inactive">Ce compte est inactif.</string>
+    <string name="account_close">Ce compte est suspendu.</string>
+    <string name="get_data_failed">Impossible de récupérer les données.</string>
+    <string name="try_opera_connection">Nous allons tenter de vous connecter en mode Opera Expert avec le login et mot de passe actuel</string>
+    <string name="internal_servor_error">Une erreur serveur est survenu.</string>
+
+    <string name="no_mission">Aucune mission n\'a été trouvée pour aujourd\'hui.</string>
+    <string name="connection_impossible">Impossible d\'établir une connexion</string>
+    <string name="connection_bug">Une erreur serveur est survenue, veuillez vérifier votre identifiant et mot de passe</string>
+    <string name="updating_mission">Mission en cours d\'envoie, veuillez patienter</string>
+    <string name="update_success">Mission mise à jour avec succès</string>
+    <string name="json_error">Une erreur empêche l\'envoie de la mission, veuillez contacter responsable technique</string>
+    <string name="connection_impossible_server">Impossible d\'établir une connexion avec le serveur Opera Groupe</string>
+    <string name="connection_impossible_licence">Impossible d\'établir une connexion en mode licence. Vous allez être connecté en mode expert Opéra</string>
+    <string name="ask_connection_opera">Voulez-vous tenter de vous connecter en mode expert Opéra ?</string>
+    <string name="bad_licence">La licence n\'existe pas. Pour se connecter en Opera Expert, veuillez entrer un identifiant et mot de passe</string>
+
+    <!-- Missions -->
+    <string name="create_mission">Voulez-vous créer une mission ?</string>
+    <string name="mis_jeudi">Jeudi 17 Sep 2013</string>
+    <string name="mis_voir">Voir ordre de mission</string>
+    <string name="mis_delete">Supprimer la mission</string>
+    <string name="mis_confirm_delete">Êtes-vous certain de vouloir supprimer la mission ?</string>
+    <string name="mis_demarrer">Démarrer la mission</string>
+    <string name="mis_quitter">Quitter</string>
+    <string name="mis_envoyer">Envoyer mission</string>
+    <string name="add_mission">Créer une mission</string>
+    <string name="mis_heure">Heure</string>
+    <string name="mis_rdv">RDV</string>
+    <string name="mis_pieces">Pièces</string>
+    <string name="mis_adresse">Adresse</string>
+    <string name="mis_adresse1">Adresse+</string>
+    <string name="mis_cp">CP</string>
+    <string name="mis_ville">Ville</string>
+    <string name="mis_etage">Étage</string>
+    <string name="mis_digicode">Entrant</string>
+    <string name="mis_client">Sortant</string>
+    <string name="mis_edl">EDL Terminé</string>
+    <string name="select_mission">Veuillez sélectionner une mission</string>
+    <string name="select_number_mission">Veuillez rentrer un numéro de mission</string>
+    <string name="error_number_mission">Le numéro de mission doit être composé de chiffres seulement</string>
+    <string name="error_number_piece_surface">Le nombre de pièce et la surface, doivent être composés de chiffres seulement</string>
+    <string name="error_date_format">Le format de l\'heure est erroné, il doit être dans le format suivant: </string>
+    <string name="error_missing_entrant">Vous devez ajouter un locataire entrant pour une mission de type Entrée</string>
+    <string name="error_missing_sortant">Vous devez ajouter un locataire sortant pour une mission de type Sortie</string>
+    <string name="error_missing_entrant_sortant">Vous devez ajouter un locataire entrant et sortant pour une mission de type Entrée/Sortie</string>
+
+    <!-- Etat des lieux / MISSION -->
+    <string name="t2">T2</string>
+    <string name="edl_entree">État des lieux d\'entrée</string>
+    <string name="edl_sortie">État des lieux de sortie</string>
+    <string name="edl_sortie_entree">État des lieux d\'entrée et de sortie</string>
+    <string name="Mission_33071">Mission 33071</string>
+    <string name="rue_Fenelon">4 rue Fenelon</string>
+    <string name="test_LYON">69006 LYON</string>
+    <string name="voir_mission">Voir mission</string>
+    <string name="modifier_mission">Modifier mission</string>
+    <string name="select_element">Veuillez définir un élément à rajouter</string>
+    <string name="select_pack_element">Veuillez définir un pack d\élément à rajouter</string>
+    <string name="select_type_element">Veuillez séléctionner le type de l\'élément pour choisir une observation</string>
+    <string name="impossible_add_element">Impossible de rajouter un nouvel élément</string>
+    <string name="success_add_element">Un nouvel élément a été ajouté</string>
+    <string name="impossible_to_delete">Cet élément n\'est pas supprimable</string>
+    <string name="impossible_save_element">Vous devez sélectionner une action pour les élèments en mauvais état avant d\'enregistrer les données</string>
+    <string name="impossible_save_action">Vous devez sélectionner une quantité pour définir l\'action</string>
+    <string name="impossible_delete">Cet élément n\'est pas supprimable</string>
+    <string name="no_find_type_picture">Images introuvable pour certains types</string>
+    <string name="locataire_entrant">Locataire entrant:</string>
+    <string name="locataire_sortant">Locataire sortant:</string>
+    <string name="aucun_locataire">Aucun locataire connu actuellement</string>
+    <string name="modifier">Modifier</string>
+    <string name="signer">Signer</string>
+    <string name="terminer_le_mission">Terminer la mission</string>
+    <string name="duplicate_success">La pièce a bien été dupliquée</string>
+    <string name="duplicate_piece">Nom de la pièce dupliquée: </string>
+
+
+    <!-- Nouvelles -->
+    <string name="nouvelles_coordinates">Nouvelles coordonnées du locataire</string>
+    <string name="prenom">Prénom</string>
+    <string name="nom">Nom</string>
+    <string name="addresse">Adresse</string>
+    <string name="cp">CP</string>
+    <string name="ville">Ville</string>
+    <string name="telephone">Téléphone</string>
+    <string name="date_entree">Date entrée</string>
+    <string name="address_inconnue">Adresse inconnue (ou refus du locataire)</string>
+    <string name="represent_par">Représenté par :</string>
+    <string name="nom_representant">Nom du représentant</string>
+    <string name="email">Email</string>
+    <string name="pas_email">pas d\'email</string>
+    <string name="dupliquer">Dupliquer</string>
+
+    <!-- order-mission -->
+    <string name="om_annuler">Annuler</string>
+    <string name="om_valider_les_modi">Valider les modifications</string>
+    <string name="om_valider">Valider</string>
+    <string name="om_mission">Identifiant :</string>
+    <string name="om_date">Date :</string>
+    <string name="om_heure">Heure</string>
+    <string name="om_entrant">Locataire Entrant :</string>
+    <string name="om_sortant">Locataire Sortant</string>
+    <string name="om_client">Client :</string>
+    <string name="om_immeuble">Immeuble</string>
+    <string name="om_lot">Lot</string>
+    <string name="om_mandat">Mandat</string>
+    <string name="om_mission_tv">327553</string>
+    <string name="om_date_tv">10/09/2013</string>
+    <string name="om_heure_tv">11h30</string>
+    <string name="om_entrant_tv">Malheiro Philippe</string>
+    <string name="om_sortant_tv">Ex Sompas</string>
+    <string name="om_client_tv">PURE GESTION</string>
+    <string name="om_immeuble_tv">0578</string>
+    <string name="om_lot_tv">0030</string>
+    <string name="om_chk1">État des lieux Entrée</string>
+    <string name="om_chk2">État des lieux Sortie </string>
+    <string name="om_chk4">Entrée / Sortie</string>
+    <string name="om_chk3">Constat après travaux</string>
+    <string name="om_address">Adresse</string>
+    <string name="om_suite">Suite</string>
+    <string name="om_cp">CP</string>
+    <string name="om_ville">Ville</string>
+    <string name="om_etage">Étage*</string>
+    <string name="om_type">Type du bien</string>
+    <string name="om_type_mission">Type de mission</string>
+    <string name="om_pieces">Pièces</string>
+    <string name="om_interieur">Intérieur</string>
+    <string name="om_surface">Surface</string>
+    <string name="om_fournisseur">Fournisseur</string>
+    <string name="om_cave">Cave</string>
+    <string name="om_grenier">Grenier</string>
+    <string name="om_address_tv">22 rue Jean Jaurès</string>
+    <string name="om_cp_tv">69007</string>
+    <string name="om_ville_tv">Lyon</string>
+    <string name="om_type_commerce">Boutique/Commerce</string>
+    <string name="om_type_bureau">Bureaux</string>
+    <string name="om_type_entrepot">Entrepôt</string>
+    <string name="om_pieces_tv">Pièces</string>
+    <string name="om_surface_tv">42 m2</string>
+    <string name="om_edt_1">Informations Compteurs :</string>
+    <string name="om_edt_2">Observations</string>
+    <string name="om_radio1">Clés avec le locataire</string>
+    <string name="om_radio2">Clés à récupérer au bureau</string>
+    <string name="om_radio3">Clés chez le client</string>
+    <string name="om_radio4">Clés en transit</string>
+
+    <!-- order-pieces -->
+    <string name="op_spinner">Choisir une pièce</string>
+    <string name="op_edt1">Modifier nom de pièce</string>
+    <string name="op_adjouter">Ajouter une pièce</string>
+    <string name="op_entree">Entrée</string>
+    <string name="op_cuisine">Cuisine</string>
+    <string name="op_degage">Dégagement</string>
+    <string name="op_chambre">Chambre</string>
+    <string name="op_cave">Cave</string>
+    <string name="op_sejour">Séjour</string>
+    <string name="op_wc">WC</string>
+    <string name="op_salle">Salle de bain</string>
+    <string name="op_garage">Garage</string>
+    <string name="op_grenier">Grenier</string>
+    <string name="op_additif">Additif extérieur</string>
+    <string name="op_facade">Façade extérieure</string>
+    <string name="op_sas">SAS</string>
+    <string name="op_local">Local</string>
+    <string name="op_entrepot">Entrepôt</string>
+    <string name="op_circulation">Circulation</string>
+    <string name="op_local_info">Local informatique</string>
+    <string name="op_sanitaire">Sanitaire</string>
+    <string name="op_ascenseur">Ascenseur</string>
+    <string name="op_bureau">Bureau</string>
+    <string name="pop_up">Annuler</string>
+
+    <!-- Mission Opera -->
+    <string name="mission">MISSION</string>
+    <string name="compteurs">COMPTEURS</string>
+    <string name="piecse">PIÈCES</string>
+    <string name="cles">CLÉS</string>
+    <string name="eau_text">Eau(1)</string>
+    <string name="eau2_text">Eau(2)</string>
+    <string name="gaz_text">Gaz</string>
+    <string name="detectur_text">Détecteur de fumée</string>
+    <string name="eau_chaude">Eau chaude sanitaire</string>
+    <string name="accessible_text">Accessible</string>
+    <string name="chaud_text">Chaud</string>
+    <string name="friod_text">Froid</string>
+    <string name="electric_text">Electricité</string>
+    <string name="chauffage_text">Chauffage</string>
+    <string name="hors_text">Aucun certificat</string>
+    <string name="jour_text">Jour</string>
+    <string name="nuit_text">Nuit</string>
+    <string name="type_text">Type</string>
+    <string name="chaudiere_text">Chaudière</string>
+    <string name="marque_text">Marque</string>
+    <string name="miss_m3">m3</string>
+    <string name="miss_kw">KW</string>
+    <string name="present">Présent:</string>
+    <string name="nombre">Nombre de détecteur:</string>
+    <string name="nombre_hint">Nombre de détecteur:</string>
+    <string name="mis_localcomm">Local Commercial</string>
+    <string name="mis_bureau">Bureau</string>
+    <string name="mis_mixte">Mixte</string>
+    <string name="mis_tertiaire">Tertiaire</string>
+    <string name="mis_boutique">Boutique</string>
+
+    <!-- mission_opera -->
+    <string name="mo_teminer_btn">Terminer la mission</string>
+    <string name="mo_vior_btn">Voir mission</string>
+    <string name="mo_modifiermission_btn">Modifier mission</string>
+    <string name="mo_modifier_btn">Modifier</string>
+    <string name="mo_signer_btn">Signer</string>
+    <string name="mo_address">4 rue Fenelon 69006 LYON</string>
+    <string name="mo_mission_no">Mission330711</string>
+    <string name="mo_locataire_txt">Locataire entrant :</string>
+    <string name="mo_locataire_txtvalue">Raymond Martin</string>
+    <string name="pie_choisir">Choisir une pièce</string>
+    <string name="pie_pieces">Pièces</string>
+    <string name="edf">EDF</string>
+    <string name="dialog_photo_title">Photos</string>
+    <string name="see_all_photos">Voir toutes les photos</string>
+    <string name="error_cp">Le code postal doit-être composé de 5 chiffres</string>
+    <string name="error_address">L\'adresse doit-être renseignée</string>
+
+    <!-- Fermeture -->
+    <string name="fermeture_text">Fermeture</string>
+
+    <string-array name="array_fermeture">
+        <item>Serrure Principale</item>
+        <item>Entrebailier</item>
+        <item>Serrure 3 points</item>
+        <item>Serrure 5 points</item>
+        <item>Verrous(s)bas</item>
+        <item>Verrous(s)haut</item>
+    </string-array>
+    <string-array name="array_fermetureimg">
+        <item>prod1</item>
+        <item>prod2</item>
+        <item>prod3</item>
+        <item>prod3</item>
+        <item>prod4</item>
+        <item>prod4</item>
+    </string-array>
+
+    <!-- Interieur values -->
+    <string-array name="interieur_spinner">
+        <item>Non meublé</item>
+        <item>Meublé</item>
+    </string-array>
+
+    <!-- Observation Alert -->
+    <string-array name="array_observation">
+        <item>Observations</item>
+        <item>Arrachée</item>
+        <item>Mal Ajustée</item>
+        <item>Ne s\'ouvre pas</item>
+        <item>N\'enclenche pas</item>
+        <item>Sale</item>
+        <item>Sticker</item>
+        <item>Taguée</item>
+        <item>Tordue</item>
+        <item>Très Sale</item>
+    </string-array>
+
+    <string name="obs_text">Observations</string>
+    <string name="obs_archaee">Arrachée</string>
+    <string name="obs_maladjustee">Mal Ajustée</string>
+    <string name="obs_nesouvre">Ne s\'ouvre pas</string>
+    <string name="obs_sale">Sale</string>
+    <string name="obs_sticker">Sticker</string>
+    <string name="obs_taguee">Taguée</string>
+    <string name="obs_tordue">Tordue</string>
+    <string name="obs_tressale">Très Sale</string>
+    <string name="obs_ajouter">Ajouter</string>
+    <string name="fois">fois</string>
+
+    <!-- Entree -->
+    <string name="general">GÉNÉRAL</string>
+    <string name="etat">ÉTAT DE LA PIÈCE</string>
+    <string name="elements_eau">ÉLEMENTS D\'EAU</string>
+    <string name="inventaire">INVENTAIRE</string>
+    <string name="ent_longueur">Longueur :</string>
+    <string name="ent_largeur">Largeur :</string>
+    <string name="ent_hauteur">Hauteur :</string>
+    <string name="entree_chk1">Inclus dans une autre pièce</string>
+    <string name="ent_nettoyage">Nettoyage :</string>
+    <string name="ent_notes">Notes :</string>
+    <string name="ent_element">Élément</string>
+    <string name="ent_type">Type</string>
+    <string name="ent_qte">Qté</string>
+    <string name="ent_etat">État</string>
+    <string name="ent_obervations">Observations</string>
+    <string name="ent_photo">Photo</string>
+    <string name="ent_tr">Tr</string>
+    <string name="ent_nt">Nett</string>
+    <string name="ent_action">Action</string>
+
+    <!-- Cles -->
+    <string name="cls_cles">Clés</string>
+    <string name="cls_verifiees">Vérifiées</string>
+    <string name="cls_nonverifiees">Non Vérifiées</string>
+    <string name="cls_total">Total</string>
+    <string name="cls_hs">HS</string>
+    <string name="cls_commentaire">Commentaire</string>
+    <string name="cls_ajouter">Ajouter une clé</string>
+    <string name="cls_valider">Valider les modifications</string>
+    <string name="cls_total1">Total :</string>
+    <string name="cls_termier">Terminer la mission</string>
+
+    <string-array name="array_clefs">
+        <item>Ascenseur</item>
+        <item>Boites aux lettres</item>
+        <item>Carte/Badge</item>
+        <item>Emetteur</item>
+        <item>Local commun</item>
+        <item>Local poubelle</item>
+        <item>Local Vélo</item>
+        <item>Non identifiée</item>
+        <item>Pass</item>
+        <item>Portail</item>
+        <item>Porte accès cave</item>
+        <item>Porte accès garage</item>
+        <item>Porte accès grenier</item>
+        <item>Porte cave</item>
+        <item>Porte garage</item>
+        <item>Porte grenier</item>
+        <item>Porte immeuble</item>
+        <item>Porte sas</item>
+        <item>Porte serrure principale</item>
+        <item>Porte verrou bas</item>
+        <item>Porte verrou haut</item>
+        <item>Verrou cave</item>
+        <item>Autres</item>
+    </string-array>
+
+    <string-array name="array_type_mission">
+        <item>Entrée</item>
+        <item>Sortie</item>
+        <item>Entrée / Sortie</item>
+        <item>Constat après travaux</item>
+    </string-array>
+
+    <string-array name="array_avis_reloc">
+        <item></item>
+        <item>Bon</item>
+        <item>Correct</item>
+        <item>Difficile</item>
+    </string-array>
+
+    <string name="cls_updated">Cles mises à jour</string>
+
+    <!-- Signature -->
+    <string name="title_activity_signature">Signature</string>
+    <string name="sig_success">Votre signature a bien été enregistré?</string>
+    <string name="pie_select">ETAT DE LA PIECE</string>
+    <string name="etat_be">BE</string>
+    <string name="etat_hs">HS</string>
+    <string name="etat_me">ME</string>
+    <string name="etat_eu">EU</string>
+    <string name="etat_nv">NV</string>
+    <string name="etat_nf">NF</string>
+    <string name="etat_bon">Bon Etat</string>
+    <string name="etat_hors">Hors-\nservice</string>
+    <string name="etat_mauvais">Mauvais\nEtat</string>
+    <string name="etat_usage">Etat\nd\'usage</string>
+    <string name="etat_non">Non\nVérifiée</string>
+    <string name="etat_neuf">Neuf</string>
+    <string name="etat_title">État</string>
+    <string name="validate_modification">Valider les modifications</string>
+    <string name="date_entretien">Entretien: jj/mm/yyyy</string>
+    <string name="zero">0</string>
+    <string name="one">1</string>
+    <string name="empty_string_piece">Veuillez choisir le type de pièce et lui donner un nom</string>
+    <string name="logo">logo de l\'application</string>
+
+    <!-- Modifier Mission -->
+    <string name="numeroMission">Numéro mission</string>
+    <string name="dateMission">Date de la mission</string>
+    <string name="heureMission">Heure de la mission</string>
+    <string name="locataireEntrant">Locataire entrant</string>
+    <string name="locataireSortant">Locataire sortant</string>
+    <string name="mission_proprietaire">Propriétaire</string>
+    <string name="mail_reception_edl">Email</string>
+    <string name="avis_reloc">Avis de relocation</string>
+    <string name="relocation">Relocation</string>
+    <string name="nomClient">Nom client</string>
+    <string name="immeubleMission">Immeuble de la mission</string>
+    <string name="lotMission">Lot de la mission</string>
+    <string name="mandatMission">Mandat de la mission</string>
+    <string name="adresseMission">Adresse du bien</string>
+    <string name="suiteMission">Suite de l\'adresse</string>
+    <string name="codePostalMission">code postal du bien</string>
+    <string name="villeMission">Ville du bien</string>
+    <string name="etageMission">Numéro de l\'étage</string>
+    <string name="typeMission">Type du bien</string>
+    <string name="piecesMission">Nombre de pièces</string>
+    <string name="surfaceMission">Surface en m²</string>
+    <string name="m2">m²</string>
+
+    <!-- pieces main -->
+    <string name="pie_cave">Cave</string>
+    <string name="pie_chambre">Chambre</string>
+    <string name="pie_cuisine">Cuisine</string>
+    <string name="pie_degagement">Dégagement</string>
+    <string name="pie_entree">Entrée</string>
+    <string name="pie_garage">Garage</string>
+    <string name="pie_salle">Salle de bain</string>
+    <string name="pie_sejour">Séjour</string>
+    <string name="pie_wc">WC</string>
+    <string name="pie_existe">Il n\'existe pas de locataire pour cette mission actuellement</string>
+    <string name="mission_success">Mission correctement mis à jour.</string>
+
+    <string-array name="name_piece">
+        <item>Cave</item>
+        <item>Chambre</item>
+        <item>Cuisine</item>
+        <item>Dégagement</item>
+        <item>Entrée</item>
+        <item>Garage</item>
+        <item>Salle de bain</item>
+        <item>Séjour</item>
+        <item>WC</item>
+        <item>Grenier</item>
+        <item>Additif extérieur</item>
+        <item>Façade extérieure</item>
+        <item>SAS</item>
+        <item>Local</item>
+        <item>Entrepôt</item>
+        <item>Circulation</item>
+        <item>Local informatique</item>
+        <item>Sanitaire</item>
+        <item>Ascenseur</item>
+        <item>Bureau</item>
+    </string-array>
+
+    <!-- Compteurs -->
+    <string name="fournisseurCompteur">Fournisseur</string>
+    <string name="post_detecteur_header">Détecteur de fumée</string>
+    <string name="post_detecteur_present_text">Présent</string>
+    <string name="post_detecteur_nb_text">Nombre</string>
+
+    <!--  Connexion ftp -->
+    <string name="mdp_ftp">8%M1S(qs</string>
+    <string name="host_ftp">pdf.opera-groupe.fr</string>
+    <string name="id_ftp">CELdistribution</string>
+
+    <!-- Etat Piece -->
+    <string name="etat_choose_tit">Veuillez choisir une des actions suivantes:</string>
+    <string name="element_choose_tit">Veuillez choisir un des élèments suivants:</string>
+    <string name="etat_reparer">Réparer / Réviser /Entretenir</string>
+    <string name="etat_changer">Changer / Remplacer</string>
+    <string name="etat_repeindre">Repeindre</string>
+    <string name="etat_refixer">Refixer</string>
+    <string name="etat_debarrasser">Débarrasser / Vider / Supprimer</string>
+    <string name="etat_ancune">Aucune Action</string>
+    <string name="etat_quantite_tit">Quantité</string>
+    <string name="etat_unite">Unité</string>
+    <string name="etat_m2">m²</string>
+    <string name="etat_m3">m3</string>
+    <string name="etat_m1">ml</string>
+    <string name="etat_note">Note</string>
+    <string name="etat_unite_tit">Unité</string>
+    <string name="etat_del">Supprimer la ligne sélectionnée</string>
+    <string name="etat_add">Ajouter un nouvel élément</string>
+    <string name="etat_add_pack">Ajouter un pack d\'éléments</string>
+    <string name="updated_succ">Modification effectuée.</string>
+    <string name="updated_computer">Les compteurs ont été mis à jour.</string>
+    <string name="updated_elements">Les éléments de cette pièce n\'ont jamais été chargé en base.</string>
+    <string name="elements_error">Désolé, impossible de supprimer cet élément.</string>
+    <string name="computer_error">Aucune pièce modifié pour cette mission. Les pièces par défaut ont été ajoutées</string>
+    <string name="computer_error1">Il n\'existe pas de compteur pour cette mission actuellement</string>
+    <string name="chauffage_missing">Il n\'existe pas de chauffage pour cette mission actuellement</string>
+    <string name="chauffage_date_missing">La date d\'entretien du chauffage doit-être renseignée</string>
+    <string name="ecs_missing">Il n\'existe pas d\'information sur l\'eau chaude sanitaire pour cette mission actuellement</string>
+    <string name="personnes_missing">Les informations sur les locataires n\'ont pas été rempli</string>
+    <string name="ecs_empty">Une ou plusieurs informations sur l\'eau chaude sanitaire n\'ont pas été définis</string>
+    <string name="mission_error">Il n\'existe pas de locataire entrant pour cette mission actuellement</string>
+    <string name="clef_error">Aucune clef n\'existe pour cette mission</string>
+    <string name="relocation_error">L\'avis de relocation doit-être défini</string>
+    <string name="facade_picture_missing">La photo de la façade est manquante</string>
+    <string name="compteur_empty">Aucun compteur n\'existe pour cette mission</string>
+    <string name="detecteur_empty">Aucun détécteur de fumée, l\'état des lieux de ne peut pas être validé</string>
+    <string name="detecteur_saisie_erronee">Vous ne pouvez pas saisir 0 alors qu\'un détecteur est présent</string>
+    <string name="detecteur_select_field">Veuillez sélectionner \"Oui\" ou \"Non\" pour ce champ</string>
+    <string name="compteur_error">La valeur d\'un compteur est de 0, veuillez mettre à jour les données</string>
+    <string name="piece_not_finish">Une ou plusieurs pièces, doivent être validées</string>
+    <string name="map_error">Sorry! unable to create maps</string>
+    <string name="computer_data_error">Please fill all compteur</string>
+    <string name="photo_error">Vous devez prendre une photo pour chaque compteur</string>
+    <string name="envoyer">Envoyer</string>
+    <string name="error_envoyer">Certaines signatures sont manquantes</string>
+    <string name="signature">Signature</string>
+    <string name="entrant">Signature locataire entrant</string>
+    <string name="sortant">Signature locataire sortant</string>
+    <string name="proprietaire">Signature propriétaire</string>
+    <string name="opera">Signature expert mandaté ou Propriétaire</string>
+    <string name="tb_mail">Adresse e-mail</string>
+    <string name="tb_representant">Représenté par</string>
+    <string name="tb_reference">Références</string>
+    <string name="tb_client">Client</string>
+    <string name="tb_lieu">Lieu</string>
+    <string name="tb_nom">Nom - Prénom</string>
+    <string name="tb_prenom">Prénom</string>
+    <string name="tb_rdv">Rdv n°</string>
+    <string name="tb_date">Date</string>
+    <string name="tb_heure">Heure</string>
+    <string name="tb_expert">Expert</string>
+    <string name="tb_adresse">Adresse</string>
+    <string name="tb_cp">CP Ville</string>
+    <string name="tb_digicode">Digicode</string>
+    <string name="tb_etage">Etage</string>
+    <string name="tb_type">Type</string>
+    <string name="tb_proprietaire">Propriétaire</string>
+    <string name="tb_locataires">Locataires</string>
+    <string name="tb_entrant">Entrant</string>
+    <string name="tb_sortant">Sortant</string>
+    <string name="tb_entre">Entré(e) le</string>
+    <string name="tb_sorti">Sorti(e) le</string>
+    <string name="tb_ancienne">Ancienne adresse</string>
+    <string name="tb_nouvelle">Nouvelle adresse</string>
+    <string name="tb_cp_vill">CP - Ville</string>
+    <string name="tb_releves">Relevés des compteurs : effectués sous la responsabilité et le contrôle du locataire</string>
+    <string name="tb_eaum3">Eau (m3)</string>
+    <string name="tb_gazm3">Gaz (m3)</string>
+    <string name="tb_electricite">Electricité (KW)</string>
+    <string name="tb_1st">1er Compteur</string>
+    <string name="tb_gaz">Gaz</string>
+    <string name="tb_jour">Jour</string>
+    <string name="tb_chaude">Eau chaude</string>
+    <string name="tb_nuit">Nuit</string>
+    <string name="tb_froide">Eau froide</string>
+    <string name="tb_fournisseur">Fournisseur</string>
+    <string name="tb_2compteur">2d Compteur</string>
+    <string name="tb_mode">Mode de chauffage</string>
+    <string name="tb_chaudiere">Chaudière</string>
+    <string name="tb_sanitaire">Eau chaude sanitaire</string>
+    <string name="tb_certificat">Certificat d\'entretien</string>
+    <string name="tb_reserve">Réservé à</string>
+    <string name="tb_references">Références</string>
+    <string name="tb_immeuble">Immeuble</string>
+    <string name="tb_lot">Lot</string>
+    <string name="tb_mandat">Mandat</string>
+    <string name="tb_synthese">Synthèse du bien</string>
+    <string name="tb_alarms">Alarmes</string>
+    <string name="tb_detectur">Détecteur de fumée :</string>
+    <string name="tb_avis">Avis sur la relocation</string>
+    <string name="refus_de_signer">Refus de signer</string>
+    <string name="lu_approuve">Lu et approuvé</string>
+    <string name="lu_approuve_error">Toutes les cases \"Lu et approuvé\" doivent-être cochées afin d\'envoyer la mission</string>
+    <string name="piece_type">Type</string>
+    <string name="piece_qte">Qté</string>
+    <string name="piece_tr">Tr</string>
+    <string name="piece_nv">NV</string>
+    <string name="piece_nf">NF</string>
+    <string name="piece_be">BE</string>
+    <string name="piece_eu">EU</string>
+    <string name="piece_me">ME</string>
+    <string name="piece_hs">HS</string>
+    <string name="piece_observations">Observations</string>
+    <string name="piece_nett">Nett.</string>
+    <string name="piece_reserve">Action</string>
+    <string name="piece_photo">Photo</string>
+    <string name="piece_notes">Notes</string>
+    <string name="piece_error">Vous devez remplir tous les champs</string>
+    <string name="cles_txt">Clés</string>
+    <string name="cles_verifiees">Vérifiées</string>
+    <string name="cles_nonverifiees">Non vérifiées</string>
+    <string name="cles_total">Total</string>
+    <string name="cles_hs">Hors service</string>
+    <string name="cles_total_cles">Total clés</string>
+    <string name="longueur_missing">La valeur Longueur de la pièce doit-être remplie</string>
+    <string name="largeur_missing">La valeur Largeur de la pièce doit-être remplie</string>
+    <string name="hauteur_missing">La valeur Hauteur de la pièce doit-être remplie</string>
+    <string name="picture_piece_missing">Une photo doit-être prise pour la pièce</string>
+    <string name="sanitaire_piece_missing">Merci de vérifier tout les onglets</string>
+    <string name="picture_element_missing">Une photo doit-être prise, voir l\'élément </string>
+    <string name="etat_missing">Vous devez définir l\'état d\'un élément pour valider une pièce, voir l\'élément </string>
+    <string name="etat_error">Une action est requise lorsqu\'un élément est en HS ou en ME, voir l\'élément </string>
+    <string name="observation_missing">Une observation est requise lorsqu\'un élément est en HS ou en ME, voir l\'élément </string>
+    <string name="photo_missing">Une photo est requise lorsqu\'un élément est en HS ou en ME, voir l\'élément </string>
+    <string name="type_missing">Un type d\'élément est requis pour valider une pièce, voir l\'élément </string>
+    <string name="error_from_etat"> dans état de la pièce</string>
+    <string name="error_from_eau"> dans élements d\'eau</string>
+    <string name="error_from_inventaire"> dans l\'inventaire</string>
+    <string name="om_digicode">Digicode</string>
+    <string name="alert_dialog_comment">Merci de laisser un commentaire</string>
+    <string name="title_activity_maps">Map</string>
+
+
+</resources>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mis2_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_line" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dip"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:weightSum="12" >
+
+            <ImageView
+                android:layout_width="@dimen/stroke_dim"
+                android:layout_height="fill_parent"
+                android:background="@color/light_line"
+                android:contentDescription="@string/img" />
+
+            <TextView
+                android:id="@+id/ent_element_text"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:background="@color/light_bg"
+                android:gravity="left"
+                android:paddingBottom="5dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="5dp"
+                android:text="@string/ent_element"
+                android:textColor="@color/black"
+                android:textSize="@dimen/mis_val_size"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="@dimen/stroke_dim"
+                android:layout_height="fill_parent"
+                android:background="@color/light_line"
+                android:contentDescription="@string/img" />
+
+            <TextView
+                android:id="@+id/ent_type_text"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="2.3"
+                android:background="@color/light_bg"
+                android:gravity="left"
+                android:paddingBottom="5dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="5dp"
+                android:text="@string/ent_type"
+                android:textColor="@color/black"
+                android:textSize="@dimen/mis_val_size"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="@dimen/stroke_dim"
+                android:layout_height="fill_parent"
+                android:background="@color/light_line"
+                android:contentDescription="@string/img" />
+
+            <TextView
+                android:id="@+id/ent_qtel_text"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.4"
+                android:background="@color/light_bg"
+                android:gravity="left"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="@string/ent_qte"
+                android:textColor="@color/black"
+                android:textSize="@dimen/mis_val_size"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="@dimen/stroke_dim"
+                android:layout_height="fill_parent"
+                android:background="@color/light_line"
+                android:contentDescription="@string/img" />
+
+            <TextView
+                android:id="@+id/ent_etat_text"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.5"
+                android:background="@color/light_bg"
+                android:gravity="left"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="@string/ent_etat"
+                android:textColor="@color/black"
+                android:textSize="@dimen/mis_val_size"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="@dimen/stroke_dim"
+                android:layout_height="fill_parent"
+                android:background="@color/light_line"
+                android:contentDescription="@string/img" />
+
+            <TextView
+                android:id="@+id/ent_obervations_text"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="4.9"
+                android:background="@color/light_bg"
+                android:gravity="left"
+                android:paddingBottom="5dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="5dp"
+                android:text="@string/ent_obervations"
+                android:textColor="@color/black"
+                android:textSize="@dimen/mis_val_size"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="@dimen/stroke_dim"
+                android:layout_height="fill_parent"
+                android:background="@color/light_line"
+                android:contentDescription="@string/img" />
+
+            <TextView
+                android:id="@+id/ent_photo_text"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@color/light_bg"
+                android:gravity="left"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="@string/ent_photo"
+                android:textColor="@color/black"
+                android:textSize="@dimen/mis_val_size"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="@dimen/stroke_dim"
+                android:layout_height="fill_parent"
+                android:background="@color/light_line"
+                android:contentDescription="@string/img" />
+
+            <TextView
+                android:id="@+id/ent_tr_text"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.45"
+                android:background="@color/light_bg"
+                android:gravity="left"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="@string/ent_tr"
+                android:textColor="@color/black"
+                android:textSize="@dimen/mis_val_size"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="@dimen/stroke_dim"
+                android:layout_height="fill_parent"
+                android:visibility="visible"
+                android:background="@color/light_line"
+                android:contentDescription="@string/img" />
+
+            <TextView
+                android:id="@+id/ent_tr_text"
+                android:layout_width="0dp"
+                android:visibility="visible"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.5"
+                android:background="@color/light_bg"
+                android:gravity="left"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="@string/ent_nt"
+                android:textColor="@color/black"
+                android:textSize="@dimen/mis_val_size"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="@dimen/stroke_dim"
+                android:visibility="visible"
+                android:layout_height="fill_parent"
+                android:background="@color/light_line"
+                android:contentDescription="@string/img" />
+
+            <TextView
+                android:id="@+id/ent_action_text"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.8"
+                android:background="@color/light_bg"
+                android:gravity="left"
+                android:visibility="visible"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="@string/ent_action"
+                android:textColor="@color/black"
+                android:textSize="@dimen/mis_val_size"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="@dimen/stroke_dim"
+                android:layout_height="fill_parent"
+                android:background="@color/light_line"
+                android:contentDescription="@string/img" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

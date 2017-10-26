@@ -1,0 +1,45 @@
+<resources>
+    <dimen name="font_size8">8sp</dimen>
+    <dimen name="font_size9">9sp</dimen>
+    <dimen name="font_size10">10sp</dimen>
+    <dimen name="font_size11">11sp</dimen>
+    <dimen name="font_size12">12sp</dimen>
+    <dimen name="font_size13">13sp</dimen>
+    <dimen name="font_size14">14sp</dimen>
+    <dimen name="font_size15">15sp</dimen>
+    <dimen name="font_size16">16sp</dimen>
+    <dimen name="font_size17">17sp</dimen>
+    <dimen name="font_size18">18sp</dimen>
+    <dimen name="font_size19">19sp</dimen>
+    <dimen name="font_size20">20sp</dimen>
+    <dimen name="font_size21">21sp</dimen>
+    <dimen name="font_size22">22sp</dimen>
+    <dimen name="font_size24">24sp</dimen>
+    <dimen name="font_size26">26sp</dimen>
+    <dimen name="font_size28">28sp</dimen>
+    <dimen name="font_size30">30sp</dimen>
+    <dimen name="font_size32">32sp</dimen>
+    
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_medium">8dp</dimen>
+    <dimen name="padding_large">16dp</dimen>
+    <dimen name="size_title">50sp</dimen>
+    <dimen name="size_mis_title">35sp</dimen>
+    <dimen name="size_subtitle">26sp</dimen>
+    <dimen name="size_resume_subtitle">18sp</dimen>
+    <dimen name="line_mis_height">100dip</dimen>
+    <dimen name="line_mis_height_resume">35dip</dimen>
+    <dimen name="stroke_dim">1dip</dimen>
+    <dimen name="mis_title">13sp</dimen>
+    <dimen name="mis_title_size">16sp</dimen>
+    <dimen name="mis_val_size">16sp</dimen>
+    <dimen name="mis_item_size">14sp</dimen>
+    <dimen name="resultSize">16sp</dimen>
+    <dimen name="mis_column1">65dp</dimen>
+    <dimen name="mis_column2">115dp</dimen>
+    <dimen name="mis_column3">140dp</dimen>
+    <dimen name="mis_column4">125dp</dimen>
+
+    <dimen name="mis_field5_width">120dp</dimen>
+
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="colorPrimary">#3982ce</color>
+    <color name="colorPrimaryDark">#0065AB</color>
+    <color name="colorAccent">#CC33B5E5</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="black1">#212931</color>
+    <color name="light_blue">#f2f5f8</color>
+    <color name="prog_blue">#3573b9</color>
+    <color name="pressed">#CC33B5E5</color>
+    <color name="actionbar">#3982ce</color>
+    <color name="green">#94b11f</color>
+    <color name="light_line">#eaeef1</color>
+    <color name="light_bg">#f5f8fa</color>
+    <color name="light_bg_all">#f2f5f8</color>
+    <color name="blue">#3678c2</color>
+    <color name="bluetxt">#3175c6</color>
+    <color name="green_piece">#009434</color>
+    <color name="green_piece_sel">#00531d</color>
+    
+    <color name="bg_green">#99cc00</color>
+    <color name="bg_gray">#999999</color>
+    <color name="blue_c">#99ccff</color>
+    <color name="blue_txt">#4f81bd</color>
+    
+    <!-- Color from etat element dialog -->
+    
+    <color name="green_neuf">#8fc501</color>
+    <color name="green_bon_etat">#2d8e5c</color>
+    <color name="blue_etat_usage">#03a7ed</color>
+    <color name="orange_mauvais_etat">#ffb800</color>
+    <color name="red_hs">#ff0300</color>
+    <color name="gray_no_verified">#b7b7b7</color>
+    
+</resources>

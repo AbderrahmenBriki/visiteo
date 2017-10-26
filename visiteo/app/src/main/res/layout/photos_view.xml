@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bga"
+    android:paddingTop="25dp" >
+    
+    <TextView 
+        	android:id="@+id/fermer_photos_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/selector_button"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="callCancel"
+            android:text="@string/fermer"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    
+    <GridView
+        android:id="@+id/grid_view_post_photos"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:horizontalSpacing="5dip"
+        android:numColumns="4"
+        android:padding="5dp"
+        android:verticalSpacing="5dip"
+        android:background="@color/light_bg_all"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/fermer_photos_view"
+        android:listSelector="#00000000" />
+
+</RelativeLayout>

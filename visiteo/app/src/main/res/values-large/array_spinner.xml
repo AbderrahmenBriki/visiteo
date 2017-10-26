@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="spinnerDetecteur">
+        <item></item>
+        <item>Oui</item>
+        <item>Non</item>
+    </string-array>
+    <string-array name="spinnerItemsEtatCompteur">
+        <item>Accessible</item>
+        <item>Inaccessible</item>
+        <item>Illisible</item>
+        <item>Non installé</item>
+        <item>Non identifié</item>
+        <item>Neuf</item>
+        <item>Non applicable</item>
+        <item>Interrompu</item>
+    </string-array>
+    <string-array name="spinnerItemsTypeChauffage">
+        <item>Collectif</item>
+        <item>Individuel électrique</item>
+        <item>Individuel fuel</item>
+        <item>Individuel gaz</item>
+        <item>Individuel bois</item>
+        <item>Individuel autres</item>
+        <item>Pas de chauffage</item>
+    </string-array>
+    <string-array name="spinnerItemsChaudiereChauffage">
+        <item>Classic</item>
+        <item>Ventouse</item>
+        <item>Non</item>
+    </string-array>
+    <string-array name="spinnerItemsEauChaudeType">
+        <item></item>
+        <item>Cumulus</item>
+        <item>Chauffe-eau gaz</item>
+        <item>Idem chauffage</item>
+        <item>Collective</item>
+    </string-array>
+    <string-array name="spinnerItemsEauChaudeMarque">
+        <item></item>
+        <item>Ariston</item>
+        <item>Atlantic</item>
+        <item>Chauffoteaux</item>
+        <item>Fagor</item>
+        <item>Fluendo</item>
+        <item>Leblanc</item>
+        <item>Pacific</item>
+        <item>Saunier Duval</item>
+        <item>Thermor</item>
+        <item>Autre</item>
+    </string-array>
+    <string-array name="spinnerItemsMarqueChauffage">
+        <item>Auer</item>
+        <item>Chauffoteaux</item>
+        <item>De Dietrich</item>
+        <item>Frisquet</item>
+        <item>Le Blanc</item>
+        <item>Saunier Duval</item>
+        <item>Vaillan</item>
+        <item>Autre</item>
+    </string-array>
+    <string-array name="spinnerItemsT1">
+        <item>Entrée</item>
+        <item>Cuisine</item>
+        <item>Séjour</item>
+        <item>WC</item>
+        <item>Salle de bain</item>
+    </string-array>
+    <string-array name="spinnerItemsT2">
+        <item>Entrée</item>
+        <item>Cuisine</item>
+        <item>Séjour</item>
+        <item>Chambre</item>
+        <item>WC</item>
+        <item>Salle de bain</item>
+    </string-array>
+    <string-array name="spinnerItemsT3">
+        <item>Entrée</item>
+        <item>Cuisine</item>
+        <item>Séjour</item>
+        <item>Chambre</item>
+        <item>Chambre</item>
+        <item>WC</item>
+        <item>Salle de bain</item>
+    </string-array>
+    <string-array name="spinnerItemsT4">
+        <item>Entrée</item>
+        <item>Cuisine</item>
+        <item>Séjour</item>
+        <item>Chambre</item>
+        <item>Chambre</item>
+        <item>WC</item>
+        <item>Salle de bain 1</item>
+    </string-array>
+    <string-array name="spinnerItemsT5">
+        <item>Entrée</item>
+        <item>Cuisine</item>
+        <item>Séjour</item>
+        <item>Chambre</item>
+        <item>Chambre</item>
+        <item>Chambre</item>
+        <item>WC</item>
+        <item>Salle de bain 1</item>
+    </string-array>
+    <string-array name="spinnerItemsT6">
+        <item>Entrée</item>
+        <item>Cuisine</item>
+        <item>Séjour</item>
+        <item>Chambre</item>
+        <item>Chambre</item>
+        <item>Chambre</item>
+        <item>WC 1</item>
+        <item>Salle de bain 1</item>
+        <item>Dégagement</item>
+    </string-array>
+    <string-array name="spinnerItemsVilla">
+        <item>Entrée</item>
+        <item>Cuisine</item>
+        <item>Séjour</item>
+        <item>Chambre</item>
+        <item>Chambre</item>
+        <item>Chambre</item>
+        <item>WC 1</item>
+        <item>Salle de bain 1</item>
+        <item>Dégagement</item>
+        <item>Additif extérieur</item>
+    </string-array>
+    <string-array name="spinnerItemsBoutique">
+        <item>Façade extérieure</item>
+        <item>Local</item>
+        <item>Sanitaire</item>
+    </string-array>
+    <string-array name="spinnerItemsEntrepot">
+        <item>Façade extérieure</item>
+        <item>SAS</item>
+        <item>Entrepôt</item>
+        <item>Bureau</item>
+        <item>Sanitaire</item>
+    </string-array>
+    <string-array name="spinnerItemsBureaux">
+        <item>Local</item>
+        <item>Bureau</item>
+        <item>Circulation</item>
+        <item>Sanitaire</item>
+    </string-array>
+    <string-array name="spinnerItemsTypeBien">
+        <item>T1</item>
+        <item>T2</item>
+        <item>T3</item>
+        <item>T4</item>
+        <item>T5</item>
+        <item>T6</item>
+        <item>Villa</item>
+        <item>Boutique/Commerce</item>
+        <item>Bureaux</item>
+        <item>Entrepôt</item>
+        <item>Annexe</item>
+        <item>Garage</item>
+        <item>Cave</item>
+        <item>Parties communes</item>
+    </string-array>
+
+</resources>

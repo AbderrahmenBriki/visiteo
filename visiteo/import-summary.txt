@@ -1,0 +1,679 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Manifest Merging:
+-----------------
+Your project uses libraries that provide manifests, and your Eclipse
+project did not explicitly turn on manifest merging. In Android Gradle
+projects, manifests are always merged (meaning that contents from your
+libraries' manifests will be merged into the app manifest. If you had
+manually copied contents from library manifests into your app manifest
+you may need to remove these for the app to build correctly.
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* .DS_Store
+* .gitignore
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:23.2.1
+android-support-v7-appcompat.jar => com.android.support:appcompat-v7:23.2.1
+gson-2.0.jar => com.google.code.gson:gson:2.0
+
+Potentially Missing Dependency:
+-------------------------------
+When we replaced the following .jar files with a Gradle dependency, we
+inferred the dependency version number from the filename. This
+specific version may not actually be available from the repository.
+If you get a build error stating that the dependency is missing, edit
+the version number to for example "+" to pick up the latest version
+instead. (This may require you to update your code if the library APIs
+have changed.)
+
+gson-2.0.jar => version 2.0 in com.google.code.gson:gson:2.0
+
+Replaced Libraries with Dependencies:
+-------------------------------------
+The importer recognized the following library projects as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the source files in your project were of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the library replacement in the import wizard and try
+again:
+
+android-support-v7-appcompat => [com.android.support:appcompat-v7:23.2.1]
+google-play-services_lib => [com.google.android.gms:play-services:+]
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => app/src/main/AndroidManifest.xml
+* assets/ => app/src/main/assets/
+* libs/android-query-full.0.26.8.jar => app/libs/android-query-full.0.26.8.jar
+* libs/apache-commons-net.jar => app/libs/apache-commons-net.jar
+* libs/httpclient-4.3.5.jar => app/libs/httpclient-4.3.5.jar
+* libs/httpcore-4.3.2.jar => app/libs/httpcore-4.3.2.jar
+* libs/httpmime-4.3.5.jar => app/libs/httpmime-4.3.5.jar
+* libs/org.apache.commons.io.jar => app/libs/org.apache.commons.io.jar
+* libs/signpost-commonshttp4-1.2.1.1.jar => app/libs/signpost-commonshttp4-1.2.1.1.jar
+* libs/signpost-core-1.2.1.1.jar => app/libs/signpost-core-1.2.1.1.jar
+* lint.xml => app/lint.xml
+* res/ => app/src/main/res/
+* src/ => app/src/main/java/
+* src/com/appsolute/opera/.DS_Store => app/src/main/resources/com/appsolute/opera/.DS_Store
+* src/com/appsolute/opera/DAO/.DS_Store => app/src/main/resources/com/appsolute/opera/DAO/.DS_Store
+* aa060.JPG => aa060.jpg
+* aa066.JPG => aa066.jpg
+* aa222.JPG => aa222.jpg
+* aa304.JPG => aa304.jpg
+* aa305.JPG => aa305.jpg
+* aa306.JPG => aa306.jpg
+* aa307.JPG => aa307.jpg
+* aa308.JPG => aa308.jpg
+* aa309.JPG => aa309.jpg
+* aa310.JPG => aa310.jpg
+* aa313.JPG => aa313.jpg
+* aa314.JPG => aa314.jpg
+* aa315.JPG => aa315.jpg
+* aa316.JPG => aa316.jpg
+* aa317.JPG => aa317.jpg
+* aa318.JPG => aa318.jpg
+* aa319.JPG => aa319.jpg
+* aa320.JPG => aa320.jpg
+* aa321.JPG => aa321.jpg
+* aa322.JPG => aa322.jpg
+* aa323.JPG => aa323.jpg
+* aa324.JPG => aa324.jpg
+* aa325.JPG => aa325.jpg
+* aa326.JPG => aa326.jpg
+* aa327.JPG => aa327.jpg
+* aa328.JPG => aa328.jpg
+* aa329.JPG => aa329.jpg
+* aa331.JPG => aa331.jpg
+* aa335.JPG => aa335.jpg
+* aa339.JPG => aa339.jpg
+* aa440.JPG => aa440.jpg
+* aa441.JPG => aa441.jpg
+* aa445.JPG => aa445.jpg
+* aa446.JPG => aa446.jpg
+* aa447.JPG => aa447.jpg
+* aa448.JPG => aa448.jpg
+* aa449.JPG => aa449.jpg
+* aa450.JPG => aa450.jpg
+* aa451.JPG => aa451.jpg
+* aa452.JPG => aa452.jpg
+* aa453.JPG => aa453.jpg
+* aa454.JPG => aa454.jpg
+* aa455.JPG => aa455.jpg
+* aa456.JPG => aa456.jpg
+* aa457.JPG => aa457.jpg
+* aa458.JPG => aa458.jpg
+* aa459.JPG => aa459.jpg
+* aa460.JPG => aa460.jpg
+* aa461.JPG => aa461.jpg
+* aa462.JPG => aa462.jpg
+* aa463.JPG => aa463.jpg
+* aa464.JPG => aa464.jpg
+* aa465.JPG => aa465.jpg
+* aa466.JPG => aa466.jpg
+* aa467.JPG => aa467.jpg
+* aa468.JPG => aa468.jpg
+* aa469.JPG => aa469.jpg
+* aa470.JPG => aa470.jpg
+* aa471.JPG => aa471.jpg
+* aa472.JPG => aa472.jpg
+* aa473.JPG => aa473.jpg
+* aa474.JPG => aa474.jpg
+* aa475.JPG => aa475.jpg
+* aa476.JPG => aa476.jpg
+* aa477.JPG => aa477.jpg
+* aa478.JPG => aa478.jpg
+* aa479.JPG => aa479.jpg
+* aa480.JPG => aa480.jpg
+* credence_inox.JPG => credence_inox.jpg
+* crepis.JPG => crepis.jpg
+* dalles_polystyrene.JPG => dalles_polystyrene.jpg
+* ec1017.JPG => ec1017.jpg
+* ec1019.JPG => ec1019.jpg
+* ec1020.JPG => ec1020.jpg
+* ec1021.JPG => ec1021.jpg
+* ec1025.JPG => ec1025.jpg
+* ec1026.JPG => ec1026.jpg
+* ec1027.JPG => ec1027.jpg
+* ec1037.JPG => ec1037.jpg
+* ec1039.JPG => ec1039.jpg
+* ec1044.JPG => ec1044.jpg
+* ec1048.JPG => ec1048.jpg
+* ec1050.JPG => ec1050.jpg
+* ec106.JPG => ec106.jpg
+* ec1078.JPG => ec1078.jpg
+* ec108.JPG => ec108.jpg
+* ec1086.JPG => ec1086.jpg
+* ec1087.JPG => ec1087.jpg
+* ec1089.JPG => ec1089.jpg
+* ec1090.JPG => ec1090.jpg
+* ec1091.JPG => ec1091.jpg
+* ec1093.JPG => ec1093.jpg
+* ec1094.JPG => ec1094.jpg
+* ec1115.JPG => ec1115.jpg
+* ec1116.JPG => ec1116.jpg
+* ec112.JPG => ec112.jpg
+* ec1136.JPG => ec1136.jpg
+* ec1139.JPG => ec1139.jpg
+* ec1141.JPG => ec1141.jpg
+* ec117.JPG => ec117.jpg
+* ec118.JPG => ec118.jpg
+* ec119.JPG => ec119.jpg
+* ec120.JPG => ec120.jpg
+* ec121.JPG => ec121.jpg
+* ec122.JPG => ec122.jpg
+* ec123.JPG => ec123.jpg
+* ec124.JPG => ec124.jpg
+* ec125.JPG => ec125.jpg
+* ec126.JPG => ec126.jpg
+* ec127.JPG => ec127.jpg
+* ec128.JPG => ec128.jpg
+* ec129.JPG => ec129.jpg
+* ec130.JPG => ec130.jpg
+* ec131.JPG => ec131.jpg
+* ec132.JPG => ec132.jpg
+* ec133.JPG => ec133.jpg
+* ec134.JPG => ec134.jpg
+* ec138.JPG => ec138.jpg
+* ec139.JPG => ec139.jpg
+* ec140.JPG => ec140.jpg
+* ec141.JPG => ec141.jpg
+* ec142.JPG => ec142.jpg
+* ec143.JPG => ec143.jpg
+* ec144.JPG => ec144.jpg
+* ec145.JPG => ec145.jpg
+* ec146.JPG => ec146.jpg
+* ec147.JPG => ec147.jpg
+* ec148.JPG => ec148.jpg
+* ec149.JPG => ec149.jpg
+* ec150.JPG => ec150.jpg
+* ec151.JPG => ec151.jpg
+* ec152.JPG => ec152.jpg
+* ec153.JPG => ec153.jpg
+* ec154.JPG => ec154.jpg
+* ec155.JPG => ec155.jpg
+* ec156.JPG => ec156.jpg
+* ec157.JPG => ec157.jpg
+* ec158.JPG => ec158.jpg
+* ec159.JPG => ec159.jpg
+* ec160.JPG => ec160.jpg
+* ec161.JPG => ec161.jpg
+* ec162.JPG => ec162.jpg
+* ec163.JPG => ec163.jpg
+* ec164.JPG => ec164.jpg
+* ec165.JPG => ec165.jpg
+* ec166.JPG => ec166.jpg
+* ec167.JPG => ec167.jpg
+* ec168.JPG => ec168.jpg
+* ec169.JPG => ec169.jpg
+* ec170.JPG => ec170.jpg
+* ec173.JPG => ec173.jpg
+* ec174.JPG => ec174.jpg
+* ec175.JPG => ec175.jpg
+* ec176.JPG => ec176.jpg
+* ec177.JPG => ec177.jpg
+* ec178.JPG => ec178.jpg
+* ec179.JPG => ec179.jpg
+* ec182.JPG => ec182.jpg
+* ec183.JPG => ec183.jpg
+* ec184.JPG => ec184.jpg
+* ec185.JPG => ec185.jpg
+* ec186.JPG => ec186.jpg
+* ec187.JPG => ec187.jpg
+* ec19.JPG => ec19.jpg
+* ec194.JPG => ec194.jpg
+* ec195.JPG => ec195.jpg
+* ec20.JPG => ec20.jpg
+* ec21.JPG => ec21.jpg
+* ec215.JPG => ec215.jpg
+* ec217.JPG => ec217.jpg
+* ec234.JPG => ec234.jpg
+* ec235.JPG => ec235.jpg
+* ec236.JPG => ec236.jpg
+* ec237.JPG => ec237.jpg
+* ec239.JPG => ec239.jpg
+* ec262.JPG => ec262.jpg
+* ec263.JPG => ec263.jpg
+* ec265.JPG => ec265.jpg
+* ec267.JPG => ec267.jpg
+* ec274.JPG => ec274.jpg
+* ec276.JPG => ec276.jpg
+* ec277.JPG => ec277.jpg
+* ec290.JPG => ec290.jpg
+* ec293.JPG => ec293.jpg
+* ec295.JPG => ec295.jpg
+* ec324.JPG => ec324.jpg
+* ec332.JPG => ec332.jpg
+* ec333.JPG => ec333.jpg
+* ec338.JPG => ec338.jpg
+* ec339.JPG => ec339.jpg
+* ec340.JPG => ec340.jpg
+* ec341.JPG => ec341.jpg
+* ec342.JPG => ec342.jpg
+* ec343.JPG => ec343.jpg
+* ec345.JPG => ec345.jpg
+* ec348.JPG => ec348.jpg
+* ec349.JPG => ec349.jpg
+* ec356.JPG => ec356.jpg
+* ec364.JPG => ec364.jpg
+* ec365.JPG => ec365.jpg
+* ec366.JPG => ec366.jpg
+* ec368.JPG => ec368.jpg
+* ec389.JPG => ec389.jpg
+* ec392.JPG => ec392.jpg
+* ec394.JPG => ec394.jpg
+* ec395.JPG => ec395.jpg
+* ec396.JPG => ec396.jpg
+* ec397.JPG => ec397.jpg
+* ec398.JPG => ec398.jpg
+* ec399.JPG => ec399.jpg
+* ec400.JPG => ec400.jpg
+* ec401.JPG => ec401.jpg
+* ec403.JPG => ec403.jpg
+* ec404.JPG => ec404.jpg
+* ec405.JPG => ec405.jpg
+* ec406.JPG => ec406.jpg
+* ec407.JPG => ec407.jpg
+* ec408.JPG => ec408.jpg
+* ec410.JPG => ec410.jpg
+* ec411.JPG => ec411.jpg
+* ec418.JPG => ec418.jpg
+* ec422.JPG => ec422.jpg
+* ec426.JPG => ec426.jpg
+* ec429.JPG => ec429.jpg
+* ec434.JPG => ec434.jpg
+* ec441.JPG => ec441.jpg
+* ec459.JPG => ec459.jpg
+* ec467.JPG => ec467.jpg
+* ec468.JPG => ec468.jpg
+* ec469.JPG => ec469.jpg
+* ec470.JPG => ec470.jpg
+* ec477.JPG => ec477.jpg
+* ec479.JPG => ec479.jpg
+* ec481.JPG => ec481.jpg
+* ec483.JPG => ec483.jpg
+* ec485.JPG => ec485.jpg
+* ec486.JPG => ec486.jpg
+* ec487.JPG => ec487.jpg
+* ec488.JPG => ec488.jpg
+* ec489.JPG => ec489.jpg
+* ec490.JPG => ec490.jpg
+* ec492.JPG => ec492.jpg
+* ec493.JPG => ec493.jpg
+* ec494.JPG => ec494.jpg
+* ec496.JPG => ec496.jpg
+* ec497.JPG => ec497.jpg
+* ec498.JPG => ec498.jpg
+* ec499.JPG => ec499.jpg
+* ec500.JPG => ec500.jpg
+* ec501.JPG => ec501.jpg
+* ec502.JPG => ec502.jpg
+* ec503.JPG => ec503.jpg
+* ec504.JPG => ec504.jpg
+* ec505.JPG => ec505.jpg
+* ec506.JPG => ec506.jpg
+* ec507.JPG => ec507.jpg
+* ec508.JPG => ec508.jpg
+* ec509.JPG => ec509.jpg
+* ec510.JPG => ec510.jpg
+* ec511.JPG => ec511.jpg
+* ec513.JPG => ec513.jpg
+* ec515.JPG => ec515.jpg
+* ec52.JPG => ec52.jpg
+* ec521.JPG => ec521.jpg
+* ec522.JPG => ec522.jpg
+* ec523.JPG => ec523.jpg
+* ec526.JPG => ec526.jpg
+* ec528.JPG => ec528.jpg
+* ec53.JPG => ec53.jpg
+* ec536.JPG => ec536.jpg
+* ec546.JPG => ec546.jpg
+* ec550.JPG => ec550.jpg
+* ec552.JPG => ec552.jpg
+* ec564.JPG => ec564.jpg
+* ec566.JPG => ec566.jpg
+* ec567.JPG => ec567.jpg
+* ec568.JPG => ec568.jpg
+* ec569.JPG => ec569.jpg
+* ec570.JPG => ec570.jpg
+* ec571.JPG => ec571.jpg
+* ec572.JPG => ec572.jpg
+* ec573.JPG => ec573.jpg
+* ec575.JPG => ec575.jpg
+* ec576.JPG => ec576.jpg
+* ec577.JPG => ec577.jpg
+* ec578.JPG => ec578.jpg
+* ec579.JPG => ec579.jpg
+* ec580.JPG => ec580.jpg
+* ec581.JPG => ec581.jpg
+* ec582.JPG => ec582.jpg
+* ec583.JPG => ec583.jpg
+* ec585.JPG => ec585.jpg
+* ec586.JPG => ec586.jpg
+* ec591.JPG => ec591.jpg
+* ec593.JPG => ec593.jpg
+* ec595.JPG => ec595.jpg
+* ec596.JPG => ec596.jpg
+* ec598.JPG => ec598.jpg
+* ec603.JPG => ec603.jpg
+* ec604.JPG => ec604.jpg
+* ec607.JPG => ec607.jpg
+* ec608.JPG => ec608.jpg
+* ec61.JPG => ec61.jpg
+* ec610.JPG => ec610.jpg
+* ec612.JPG => ec612.jpg
+* ec613.JPG => ec613.jpg
+* ec62.JPG => ec62.jpg
+* ec625.JPG => ec625.jpg
+* ec626.JPG => ec626.jpg
+* ec627.JPG => ec627.jpg
+* ec630.JPG => ec630.jpg
+* ec631.JPG => ec631.jpg
+* ec632.JPG => ec632.jpg
+* ec635.JPG => ec635.jpg
+* ec636.JPG => ec636.jpg
+* ec639.JPG => ec639.jpg
+* ec64.JPG => ec64.jpg
+* ec640.JPG => ec640.jpg
+* ec641.JPG => ec641.jpg
+* ec65.JPG => ec65.jpg
+* ec66.JPG => ec66.jpg
+* ec660.JPG => ec660.jpg
+* ec664.JPG => ec664.jpg
+* ec680.JPG => ec680.jpg
+* ec681.JPG => ec681.jpg
+* ec683.JPG => ec683.jpg
+* ec684.JPG => ec684.jpg
+* ec685.JPG => ec685.jpg
+* ec688.JPG => ec688.jpg
+* ec689.JPG => ec689.jpg
+* ec690.JPG => ec690.jpg
+* ec691.JPG => ec691.jpg
+* ec692.JPG => ec692.jpg
+* ec693.JPG => ec693.jpg
+* ec694.JPG => ec694.jpg
+* ec696.JPG => ec696.jpg
+* ec697.JPG => ec697.jpg
+* ec698.JPG => ec698.jpg
+* ec702.JPG => ec702.jpg
+* ec703.JPG => ec703.jpg
+* ec704.JPG => ec704.jpg
+* ec708.JPG => ec708.jpg
+* ec709.JPG => ec709.jpg
+* ec71.JPG => ec71.jpg
+* ec710.JPG => ec710.jpg
+* ec711.JPG => ec711.jpg
+* ec712.JPG => ec712.jpg
+* ec713.JPG => ec713.jpg
+* ec714.JPG => ec714.jpg
+* ec715.JPG => ec715.jpg
+* ec716.JPG => ec716.jpg
+* ec717.JPG => ec717.jpg
+* ec718.JPG => ec718.jpg
+* ec719.JPG => ec719.jpg
+* ec720.JPG => ec720.jpg
+* ec722.JPG => ec722.jpg
+* ec723.JPG => ec723.jpg
+* ec724.JPG => ec724.jpg
+* ec727.JPG => ec727.jpg
+* ec728.JPG => ec728.jpg
+* ec729.JPG => ec729.jpg
+* ec73.JPG => ec73.jpg
+* ec730.JPG => ec730.jpg
+* ec736.JPG => ec736.jpg
+* ec737.JPG => ec737.jpg
+* ec738.JPG => ec738.jpg
+* ec739.JPG => ec739.jpg
+* ec740.JPG => ec740.jpg
+* ec741.JPG => ec741.jpg
+* ec742.JPG => ec742.jpg
+* ec743.JPG => ec743.jpg
+* ec744.JPG => ec744.jpg
+* ec746.JPG => ec746.jpg
+* ec747.JPG => ec747.jpg
+* ec748.JPG => ec748.jpg
+* ec749.JPG => ec749.jpg
+* ec75.JPG => ec75.jpg
+* ec750.JPG => ec750.jpg
+* ec751.JPG => ec751.jpg
+* ec752.JPG => ec752.jpg
+* ec753.JPG => ec753.jpg
+* ec754.JPG => ec754.jpg
+* ec755.JPG => ec755.jpg
+* ec756.JPG => ec756.jpg
+* ec757.JPG => ec757.jpg
+* ec758.JPG => ec758.jpg
+* ec759.JPG => ec759.jpg
+* ec760.JPG => ec760.jpg
+* ec761.JPG => ec761.jpg
+* ec762.JPG => ec762.jpg
+* ec763.JPG => ec763.jpg
+* ec765.JPG => ec765.jpg
+* ec766.JPG => ec766.jpg
+* ec767.JPG => ec767.jpg
+* ec769.JPG => ec769.jpg
+* ec770.JPG => ec770.jpg
+* ec771.JPG => ec771.jpg
+* ec772.JPG => ec772.jpg
+* ec773.JPG => ec773.jpg
+* ec774.JPG => ec774.jpg
+* ec775.JPG => ec775.jpg
+* ec776.JPG => ec776.jpg
+* ec777.JPG => ec777.jpg
+* ec778.JPG => ec778.jpg
+* ec779.JPG => ec779.jpg
+* ec78.JPG => ec78.jpg
+* ec780.JPG => ec780.jpg
+* ec781.JPG => ec781.jpg
+* ec782.JPG => ec782.jpg
+* ec783.JPG => ec783.jpg
+* ec784.JPG => ec784.jpg
+* ec785.JPG => ec785.jpg
+* ec786.JPG => ec786.jpg
+* ec787.JPG => ec787.jpg
+* ec788.JPG => ec788.jpg
+* ec789.JPG => ec789.jpg
+* ec790.JPG => ec790.jpg
+* ec791.JPG => ec791.jpg
+* ec792.JPG => ec792.jpg
+* ec793.JPG => ec793.jpg
+* ec794.JPG => ec794.jpg
+* ec795.JPG => ec795.jpg
+* ec796.JPG => ec796.jpg
+* ec797.JPG => ec797.jpg
+* ec798.JPG => ec798.jpg
+* ec799.JPG => ec799.jpg
+* ec80.JPG => ec80.jpg
+* ec800.JPG => ec800.jpg
+* ec801.JPG => ec801.jpg
+* ec802.JPG => ec802.jpg
+* ec803.JPG => ec803.jpg
+* ec804.JPG => ec804.jpg
+* ec805.JPG => ec805.jpg
+* ec806.JPG => ec806.jpg
+* ec807.JPG => ec807.jpg
+* ec808.JPG => ec808.jpg
+* ec809.JPG => ec809.jpg
+* ec810.JPG => ec810.jpg
+* ec82.JPG => ec82.jpg
+* ec821.JPG => ec821.jpg
+* ec822.JPG => ec822.jpg
+* ec823.JPG => ec823.jpg
+* ec824.JPG => ec824.jpg
+* ec825.JPG => ec825.jpg
+* ec826.JPG => ec826.jpg
+* ec827.JPG => ec827.jpg
+* ec828.JPG => ec828.jpg
+* ec829.JPG => ec829.jpg
+* ec830.JPG => ec830.jpg
+* ec831.JPG => ec831.jpg
+* ec832.JPG => ec832.jpg
+* ec833.JPG => ec833.jpg
+* ec834.JPG => ec834.jpg
+* ec835.JPG => ec835.jpg
+* ec836.JPG => ec836.jpg
+* ec837.JPG => ec837.jpg
+* ec838.JPG => ec838.jpg
+* ec839.JPG => ec839.jpg
+* ec840.JPG => ec840.jpg
+* ec841.JPG => ec841.jpg
+* ec842.JPG => ec842.jpg
+* ec843.JPG => ec843.jpg
+* ec844.JPG => ec844.jpg
+* ec845.JPG => ec845.jpg
+* ec846.JPG => ec846.jpg
+* ec847.JPG => ec847.jpg
+* ec848.JPG => ec848.jpg
+* ec849.JPG => ec849.jpg
+* ec85.JPG => ec85.jpg
+* ec850.JPG => ec850.jpg
+* ec851.JPG => ec851.jpg
+* ec852.JPG => ec852.jpg
+* ec853.JPG => ec853.jpg
+* ec854.JPG => ec854.jpg
+* ec855.JPG => ec855.jpg
+* ec856.JPG => ec856.jpg
+* ec857.JPG => ec857.jpg
+* ec858.JPG => ec858.jpg
+* ec859.JPG => ec859.jpg
+* ec86.JPG => ec86.jpg
+* ec860.JPG => ec860.jpg
+* ec861.JPG => ec861.jpg
+* ec862.JPG => ec862.jpg
+* ec863.JPG => ec863.jpg
+* ec864.JPG => ec864.jpg
+* ec865.JPG => ec865.jpg
+* ec866.JPG => ec866.jpg
+* ec867.JPG => ec867.jpg
+* ec868.JPG => ec868.jpg
+* ec869.JPG => ec869.jpg
+* ec87.JPG => ec87.jpg
+* ec870.JPG => ec870.jpg
+* ec871.JPG => ec871.jpg
+* ec872.JPG => ec872.jpg
+* ec873.JPG => ec873.jpg
+* ec874.JPG => ec874.jpg
+* ec875.JPG => ec875.jpg
+* ec876.JPG => ec876.jpg
+* ec877.JPG => ec877.jpg
+* ec878.JPG => ec878.jpg
+* ec879.JPG => ec879.jpg
+* ec880.JPG => ec880.jpg
+* ec881.JPG => ec881.jpg
+* ec882.JPG => ec882.jpg
+* ec883.JPG => ec883.jpg
+* ec884.JPG => ec884.jpg
+* ec885.JPG => ec885.jpg
+* ec886.JPG => ec886.jpg
+* ec887.JPG => ec887.jpg
+* ec888.JPG => ec888.jpg
+* ec889.JPG => ec889.jpg
+* ec890.JPG => ec890.jpg
+* ec891.JPG => ec891.jpg
+* ec892.JPG => ec892.jpg
+* ec893.JPG => ec893.jpg
+* ec894.JPG => ec894.jpg
+* ec895.JPG => ec895.jpg
+* ec896.JPG => ec896.jpg
+* ec897.JPG => ec897.jpg
+* ec898.JPG => ec898.jpg
+* ec899.JPG => ec899.jpg
+* ec900.JPG => ec900.jpg
+* ec901.JPG => ec901.jpg
+* ec902.JPG => ec902.jpg
+* ec903.JPG => ec903.jpg
+* ec904.JPG => ec904.jpg
+* ec905.JPG => ec905.jpg
+* ec906.JPG => ec906.jpg
+* ec908.JPG => ec908.jpg
+* ec909.JPG => ec909.jpg
+* ec910.JPG => ec910.jpg
+* ec911.JPG => ec911.jpg
+* ec912.JPG => ec912.jpg
+* ec913.JPG => ec913.jpg
+* ec914.JPG => ec914.jpg
+* ec915.JPG => ec915.jpg
+* ec916.JPG => ec916.jpg
+* ec917.JPG => ec917.jpg
+* ec918.JPG => ec918.jpg
+* ec919.JPG => ec919.jpg
+* ec92.JPG => ec92.jpg
+* ec920.JPG => ec920.jpg
+* ec921.JPG => ec921.jpg
+* ec922.JPG => ec922.jpg
+* ec923.JPG => ec923.jpg
+* ec924.JPG => ec924.jpg
+* ec925.JPG => ec925.jpg
+* ec926.JPG => ec926.jpg
+* ec927.JPG => ec927.jpg
+* ec928.JPG => ec928.jpg
+* ec929.JPG => ec929.jpg
+* ec93.JPG => ec93.jpg
+* ec930.JPG => ec930.jpg
+* ec931.JPG => ec931.jpg
+* ec932.JPG => ec932.jpg
+* ec933.JPG => ec933.jpg
+* ec934.JPG => ec934.jpg
+* ec935.JPG => ec935.jpg
+* ec936.JPG => ec936.jpg
+* ec943.JPG => ec943.jpg
+* ec945.JPG => ec945.jpg
+* ec946.JPG => ec946.jpg
+* ec947.JPG => ec947.jpg
+* ec948.JPG => ec948.jpg
+* ec949.JPG => ec949.jpg
+* ec950.JPG => ec950.jpg
+* ec951.JPG => ec951.jpg
+* ec952.JPG => ec952.jpg
+* ec953.JPG => ec953.jpg
+* ec954.JPG => ec954.jpg
+* ec955.JPG => ec955.jpg
+* ec956.JPG => ec956.jpg
+* ec96.JPG => ec96.jpg
+* ec965.JPG => ec965.jpg
+* ec966.JPG => ec966.jpg
+* ec967.JPG => ec967.jpg
+* ec968.JPG => ec968.jpg
+* ec97.JPG => ec97.jpg
+* ec970.JPG => ec970.jpg
+* ec973.JPG => ec973.jpg
+* ec982.JPG => ec982.jpg
+* ec997.JPG => ec997.jpg
+* marquise.JPG => marquise.jpg
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

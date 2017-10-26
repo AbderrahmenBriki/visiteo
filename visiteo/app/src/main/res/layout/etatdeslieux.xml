@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bga" >
+
+    <RelativeLayout
+        android:id="@+id/relative_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="bottom" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="bottom" >
+
+            <TextView
+                android:id="@+id/tab_mission"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/menuhover"
+                android:clickable="true"
+                android:gravity="center_horizontal"
+                android:onClick="callMission"
+                android:padding="10dp"
+                android:text="@string/mission"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tab_compteurs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/menu_left"
+                android:clickable="true"
+                android:gravity="center_horizontal"
+                android:onClick="callCompteurs"
+                android:padding="10dp"
+                android:text="@string/compteurs"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tab_piecse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/menu_left"
+                android:clickable="true"
+                android:gravity="center_horizontal"
+                android:onClick="callPiece"
+                android:padding="10dp"
+                android:text="@string/piecse"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tab_cles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/menu_right"
+                android:clickable="true"
+                android:gravity="center_horizontal"
+                android:onClick="callCles"
+                android:padding="10dp"
+                android:text="@string/cles"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/valider_modi_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/blue_btn"
+            android:layout_toLeftOf="@+id/valider_button"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="callValiderModi"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:visibility="gone"
+            android:text="@string/om_valider_les_modi"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/fragmentview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/relative_layout"
+        android:background="@color/light_bg_all"
+        android:fadingEdge="none"
+        android:paddingTop="35dp"
+        android:scrollbars="none" >
+
+        <FrameLayout
+            android:id="@+id/frame_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/pieceslayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relative_layout"
+        android:background="@color/light_bg_all"
+        android:visibility="invisible" >
+
+        <include
+            android:id="@+id/frag_pieces"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/fragment_list_pieces" />
+    </RelativeLayout>
+
+</RelativeLayout>

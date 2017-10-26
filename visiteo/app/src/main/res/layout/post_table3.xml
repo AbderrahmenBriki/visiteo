@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:shrinkColumns="*"
+    android:stretchColumns="*" >
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_span="6"
+            android:background="@drawable/border_violet"
+            android:padding="@dimen/cell_padding"
+            android:text="@string/tb_releves"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/white" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" >
+
+        <TextView
+            android:layout_span="2"
+            android:background="@drawable/border_gray"
+            android:gravity="left"
+            android:padding="@dimen/cell_padding"
+            android:text="@string/tb_eaum3"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_span="2"
+            android:background="@drawable/border_gray"
+            android:gravity="left"
+            android:padding="@dimen/cell_padding"
+            android:text="@string/tb_gazm3"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_span="2"
+            android:background="@drawable/border_gray"
+            android:gravity="left"
+            android:padding="@dimen/cell_padding"
+            android:text="@string/tb_electricite"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_span="2"
+            android:layout_weight="1"
+            android:background="@drawable/border_white"
+            android:gravity="left"
+            android:padding="@dimen/cell_padding"
+            android:text="@string/tb_1st"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/blue_c"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_weight="1"
+            android:background="@drawable/border_white"
+            android:gravity="right"
+            android:padding="@dimen/cell_padding"
+            android:text="@string/tb_gaz"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/gazval"
+            android:layout_weight="1"
+            android:background="@drawable/border_white"
+            android:gravity="left"
+            android:padding="@dimen/cell_padding"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_weight="1"
+            android:background="@drawable/border_white"
+            android:gravity="right"
+            android:padding="@dimen/cell_padding"
+            android:text="@string/tb_jour"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/jourval"
+            android:layout_weight="1"
+            android:background="@drawable/border_white"
+            android:gravity="left"
+            android:padding="@dimen/cell_padding"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_weight="1"
+            android:background="@drawable/border_white"
+            android:gravity="right"
+            android:padding="@dimen/cell_padding"
+            android:text="@string/tb_chaude"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/chaudeval"
+            android:layout_weight="1"
+            android:background="@drawable/border_white"
+            android:gravity="right"
+            android:padding="@dimen/cell_padding"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_span="2"
+            android:layout_weight="1"
+            android:background="@drawable/border_white"
+            android:gravity="right"
+            android:padding="@dimen/cell_padding"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_weight="1"
+            android:background="@drawable/border_white"
+            android:gravity="right"
+            android:padding="@dimen/cell_padding"
+            android:text="@string/tb_nuit"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/nuitval"
+            android:layout_weight="1"
+            android:background="@drawable/border_white"
+            android:gravity="left"
+            android:padding="@dimen/cell_padding"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_weight="1"
+            android:background="@drawable/border_white"
+            android:gravity="right"
+            android:padding="@dimen/cell_padding"
+            android:text="@string/tb_froide"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/froideval"
+            android:layout_weight="1"
+            android:background="@drawable/border_white"
+            android:gravity="right"
+            android:padding="@dimen/cell_padding"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_span="2"
+            android:layout_weight="1"
+            android:background="@drawable/border_white"
+            android:gravity="right"
+            android:padding="@dimen/cell_padding"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_weight="1"
+            android:background="@drawable/border_white"
+            android:gravity="right"
+            android:padding="@dimen/cell_padding"
+            android:text="@string/tb_fournisseur"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/fournisseurval"
+            android:layout_weight="1"
+            android:background="@drawable/border_white"
+            android:gravity="left"
+            android:padding="@dimen/cell_padding"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_span="2"
+            android:layout_weight="1"
+            android:background="@drawable/border_white"
+            android:gravity="left"
+            android:padding="@dimen/cell_padding"
+            android:text="@string/tb_2compteur"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/blue_c"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_span="2"
+            android:layout_weight="1"
+            android:background="@drawable/border_white"
+            android:padding="@dimen/cell_padding" />
+
+        <TextView
+            android:layout_span="2"
+            android:layout_weight="1"
+            android:background="@drawable/border_white"
+            android:padding="@dimen/cell_padding" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_weight="1"
+            android:background="@drawable/border_white"
+            android:gravity="right"
+            android:padding="@dimen/cell_padding"
+            android:text="@string/tb_chaude"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/chaudeval1"
+            android:layout_weight="1"
+            android:background="@drawable/border_white"
+            android:gravity="right"
+            android:padding="@dimen/cell_padding"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_span="2"
+            android:layout_weight="1"
+            android:background="@drawable/border_white"
+            android:gravity="right"
+            android:padding="@dimen/cell_padding"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_span="2"
+            android:layout_weight="1"
+            android:background="@drawable/border_white"
+            android:padding="@dimen/cell_padding" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_weight="1"
+            android:background="@drawable/border_white"
+            android:gravity="right"
+            android:padding="@dimen/cell_padding"
+            android:text="@string/tb_froide"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/froideval1"
+            android:layout_weight="1"
+            android:background="@drawable/border_white"
+            android:gravity="right"
+            android:padding="@dimen/cell_padding"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_span="2"
+            android:layout_weight="1"
+            android:background="@drawable/border_white"
+            android:gravity="right"
+            android:padding="@dimen/cell_padding"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_span="2"
+            android:layout_weight="1"
+            android:background="@drawable/border_white"
+            android:padding="@dimen/cell_padding" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_span="6"
+            android:background="@drawable/border_white"
+            android:padding="@dimen/cell_padding"
+            android:text="@string/chauffage_text"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/blue_c"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:layout_span="2"
+            android:layout_weight="1"
+            android:background="@drawable/border_white"
+            android:gravity="right"
+            android:padding="@dimen/cell_padding"
+            android:text="@string/tb_mode"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/modeval"
+            android:layout_span="2"
+            android:layout_weight="1"
+            android:background="@drawable/border_white"
+            android:gravity="left"
+            android:padding="@dimen/cell_padding"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_span="2"
+            android:layout_weight="1"
+            android:background="@drawable/border_white"
+            android:padding="@dimen/cell_padding" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_span="2"
+            android:layout_weight="1"
+            android:background="@drawable/border_white"
+            android:gravity="right"
+            android:padding="@dimen/cell_padding"
+            android:text="@string/tb_chaudiere"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/chaudiereval"
+            android:layout_span="2"
+            android:layout_weight="1"
+            android:background="@drawable/border_white"
+            android:gravity="left"
+            android:padding="@dimen/cell_padding"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_weight="1"
+            android:background="@drawable/border_white"
+            android:gravity="right"
+            android:padding="@dimen/cell_padding"
+            android:text="@string/tb_certificat"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/sanitaireval"
+            android:layout_weight="1"
+            android:background="@drawable/border_white"
+            android:gravity="left"
+            android:padding="@dimen/cell_padding"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_span="2"
+            android:layout_weight="1"
+            android:background="@drawable/border_white"
+            android:gravity="right"
+            android:padding="@dimen/cell_padding"
+            android:text="@string/tb_sanitaire"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/certificatval"
+            android:layout_span="2"
+            android:layout_weight="1"
+            android:background="@drawable/border_white"
+            android:gravity="left"
+            android:padding="@dimen/cell_padding"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_span="2"
+            android:layout_weight="1"
+            android:background="@drawable/border_white"
+            android:padding="@dimen/cell_padding" />
+    </TableRow>
+    
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_span="6"
+            android:background="@drawable/border_white"
+            android:padding="@dimen/cell_padding"
+            android:text="@string/tb_sanitaire"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/blue_c"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_span="2"
+            android:layout_weight="1"
+            android:background="@drawable/border_white"
+            android:gravity="right"
+            android:padding="@dimen/cell_padding"
+            android:text="@string/type_text"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/ecsType_TextView"
+            android:layout_span="2"
+            android:layout_weight="1"
+            android:background="@drawable/border_white"
+            android:gravity="left"
+            android:padding="@dimen/cell_padding"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_weight="1"
+            android:background="@drawable/border_white"
+            android:gravity="right"
+            android:padding="@dimen/cell_padding"
+            android:text="@string/marque_text"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/ecsMarque_TextView"
+            android:layout_weight="1"
+            android:background="@drawable/border_white"
+            android:gravity="left"
+            android:padding="@dimen/cell_padding"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+    </TableRow>
+    
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_span="6"
+            android:background="@drawable/border_gray"
+            android:padding="@dimen/cell_padding"
+            android:text="@string/post_detecteur_header"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:layout_span="3"
+            android:background="@drawable/border_white"
+            android:padding="@dimen/cell_padding"
+            android:text="@string/post_detecteur_present_text"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_span="3"
+            android:background="@drawable/border_white"
+            android:padding="@dimen/cell_padding"
+            android:text="@string/post_detecteur_nb_text"
+            android:gravity="center" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/post_detecteur_present_val"
+            android:layout_span="3"
+            android:background="@drawable/border_white"
+            android:padding="@dimen/cell_padding"
+            android:gravity="center"
+            android:textStyle="bold" />
+        
+        <TextView
+            android:id="@+id/post_detecteur_nb_val"
+            android:layout_span="3"
+            android:background="@drawable/border_white"
+            android:padding="@dimen/cell_padding"
+            android:gravity="center"
+            android:textStyle="bold" />
+    </TableRow>
+
+</TableLayout>

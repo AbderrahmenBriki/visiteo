@@ -1,0 +1,852 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bga"
+    android:orientation="vertical"
+    android:paddingTop="40dp" >
+
+    <LinearLayout
+        android:id="@+id/liner_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right|center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/selector_button"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="callAnnuler"
+            android:text="@string/om_annuler"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_button1"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="callValider"
+            android:text="@string/om_valider"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/liner_layout"
+        android:background="@color/light_bg_all"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/top"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/top_bg" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#f2f5f8"
+                android:baselineAligned="false" >
+
+                <LinearLayout
+                    android:id="@+id/First"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/whitebody_bg"
+                    android:orientation="vertical"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="20dp" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp" >
+
+                        <TextView
+                            android:id="@+id/mission_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minWidth="100dp"
+                            android:text="@string/om_mission"
+                            android:textColor="@color/prog_blue" />
+
+                        <TextView
+                            android:id="@+id/numeroRDV_TextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:gravity="right"
+                            android:minWidth="200dp"
+                            android:text="@string/om_mission_tv"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp" >
+
+                        <TextView
+                            android:id="@+id/date_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minWidth="100dp"
+                            android:text="@string/om_date"
+                            android:textColor="@color/prog_blue" />
+
+                        <TextView
+                            android:id="@+id/dateMission_TextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:gravity="right"
+                            android:minWidth="200dp"
+                            android:text="@string/om_date_tv"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp" >
+
+                        <TextView
+                            android:id="@+id/heure_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minWidth="100dp"
+                            android:text="@string/om_heure"
+                            android:textColor="@color/prog_blue" />
+
+                        <TextView
+                            android:id="@+id/heureMission_TextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:gravity="right"
+                            android:minWidth="200dp"
+                            android:text="@string/om_heure_tv"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp" >
+
+                        <TextView
+                            android:id="@+id/entrant_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minWidth="100dp"
+                            android:text="@string/om_entrant"
+                            android:textColor="@color/prog_blue" />
+
+                        <TextView
+                            android:id="@+id/personneEntrant_TextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:gravity="right"
+                            android:minWidth="200dp"
+                            android:text="@string/aucun_locataire"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp" >
+
+                        <TextView
+                            android:id="@+id/sortant_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minWidth="100dp"
+                            android:text="@string/om_sortant"
+                            android:textColor="@color/prog_blue" />
+
+                        <TextView
+                            android:id="@+id/personneSortant_TextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:gravity="right"
+                            android:minWidth="200dp"
+                            android:text="@string/aucun_locataire"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp" >
+
+                        <TextView
+                            android:id="@+id/proprietaire_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minWidth="100dp"
+                            android:text="@string/mission_proprietaire"
+                            android:textColor="@color/prog_blue" />
+
+                        <TextView
+                            android:id="@+id/proprietaire_TextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:gravity="right"
+                            android:hint="@string/mission_proprietaire"
+                            android:inputType="textCapSentences"
+                            android:minWidth="200dp"
+                            android:singleLine="true"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp" >
+
+                        <TextView
+                            android:id="@+id/mailReceptionEdl_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minWidth="100dp"
+                            android:text="@string/mail_reception_edl"
+                            android:textColor="@color/prog_blue" />
+
+                        <TextView
+                            android:id="@+id/mailReceptionEdl_TextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:gravity="right"
+                            android:inputType="textCapSentences"
+                            android:minWidth="200dp"
+                            android:singleLine="true"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp" >
+
+                        <TextView
+                            android:id="@+id/relocation_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minWidth="100dp"
+                            android:text="@string/avis_reloc"
+                            android:textColor="@color/prog_blue" />
+
+                        <TextView
+                            android:id="@+id/relocation_TextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:gravity="right"
+                            android:inputType="textCapSentences"
+                            android:minWidth="200dp"
+                            android:singleLine="true"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="35dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp" >
+
+                        <TextView
+                            android:id="@+id/client_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minWidth="100dp"
+                            android:text="@string/om_client"
+                            android:textColor="@color/prog_blue" />
+
+                        <TextView
+                            android:id="@+id/client_TextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:gravity="right"
+                            android:minWidth="200dp"
+                            android:text="@string/om_client_tv"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp" >
+
+                        <TextView
+                            android:id="@+id/immeuble_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minWidth="100dp"
+                            android:text="@string/om_immeuble"
+                            android:textColor="@color/prog_blue" />
+
+                        <TextView
+                            android:id="@+id/immeuble_TextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:gravity="right"
+                            android:minWidth="200dp"
+                            android:text="@string/om_immeuble_tv"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp" >
+
+                        <TextView
+                            android:id="@+id/lot_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minWidth="100dp"
+                            android:text="@string/om_lot"
+                            android:textColor="@color/prog_blue" />
+
+                        <TextView
+                            android:id="@+id/lot_TextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:gravity="right"
+                            android:minWidth="200dp"
+                            android:text="@string/om_lot_tv"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp" >
+
+                        <TextView
+                            android:id="@+id/Mandat_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minWidth="100dp"
+                            android:text="@string/om_mandat"
+                            android:textColor="@color/prog_blue" />
+
+                        <TextView
+                            android:id="@+id/Mandat_val"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:gravity="right"
+                            android:minWidth="200dp"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp">
+
+                        <TextView
+                            android:id="@+id/digicode_txt"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:minWidth="100dp"
+                            android:textColor="@color/prog_blue"
+                            android:text="@string/om_digicode" />
+
+                        <TextView
+                            android:id="@+id/digicode_val"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:gravity="right"
+                            android:minWidth="200dp"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Second"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/whitebody_bg"
+                    android:orientation="vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="20dp" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp" >
+
+                        <TextView
+                            android:id="@+id/address_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minWidth="100dp"
+                            android:text="@string/om_address"
+                            android:textColor="@color/prog_blue" />
+
+                        <TextView
+                            android:id="@+id/adresse_TextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:gravity="right"
+                            android:minWidth="200dp"
+                            android:text="@string/om_address_tv"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp" >
+
+
+                        <TextView
+                            android:id="@+id/suite_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minWidth="100dp"
+                            android:text="@string/om_suite"
+                            android:textColor="@color/prog_blue" />
+
+                        <TextView
+                            android:id="@+id/suite_TextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:gravity="right"
+                            android:minWidth="200dp"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp" >
+
+                        <TextView
+                            android:id="@+id/cp_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minWidth="100dp"
+                            android:text="@string/om_cp"
+                            android:textColor="@color/prog_blue" />
+
+                        <TextView
+                            android:id="@+id/codePostal_TextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:gravity="right"
+                            android:minWidth="200dp"
+                            android:text="@string/om_cp_tv"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp" >
+
+                        <TextView
+                            android:id="@+id/ville_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="@string/om_ville"
+                            android:textColor="@color/prog_blue" />
+
+                        <ImageView
+                            android:id="@+id/ville_map"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:background="@drawable/ville"
+                            android:contentDescription="@string/img" />
+
+                        <TextView
+                            android:id="@+id/ville_TextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="55dp"
+                            android:gravity="right"
+                            android:minWidth="200dp"
+                            android:text="@string/om_ville_tv"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp" >
+
+                        <TextView
+                            android:id="@+id/etage_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minWidth="100dp"
+                            android:text="@string/om_etage"
+                            android:textColor="@color/prog_blue" />
+
+                        <TextView
+                            android:id="@+id/etage_TextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:gravity="right"
+                            android:hint="@string/etageMission"
+                            android:inputType="number"
+                            android:minWidth="200dp"
+                            android:singleLine="true"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="35dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp" >
+
+                        <TextView
+                            android:id="@+id/type_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minWidth="100dp"
+                            android:text="@string/om_type"
+                            android:textColor="@color/prog_blue" />
+
+                        <TextView
+                            android:id="@+id/type_TextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:gravity="right"
+                            android:minWidth="200dp"
+                            android:text="@string/om_type_bureau"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp" >
+
+                        <TextView
+                            android:id="@+id/pieces_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minWidth="100dp"
+                            android:text="@string/om_pieces"
+                            android:textColor="@color/prog_blue" />
+
+                        <TextView
+                            android:id="@+id/pieces_TextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:gravity="right"
+                            android:minWidth="200dp"
+                            android:text="@string/om_pieces_tv"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp" >
+
+                        <TextView
+                            android:id="@+id/surface_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minWidth="100dp"
+                            android:text="@string/om_surface"
+                            android:textColor="@color/prog_blue" />
+
+                        <TextView
+                            android:id="@+id/surface_TextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:gravity="right"
+                            android:minWidth="200dp"
+                            android:text="@string/om_surface_tv"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp" >
+
+                        <TextView
+                            android:id="@+id/interieur_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minWidth="100dp"
+                            android:text="@string/om_interieur"
+                            android:textColor="@color/prog_blue" />
+
+                        <TextView
+                            android:id="@+id/interieur_TextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:gravity="right"
+                            android:minWidth="200dp"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp" >
+
+                        <TextView
+                            android:id="@+id/cave_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minWidth="100dp"
+                            android:text="@string/om_cave"
+                            android:textColor="@color/black"
+                            android:visibility="invisible" />
+
+                        <Switch
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:gravity="right"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp" >
+
+                        <TextView
+                            android:id="@+id/Grenier_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minWidth="100dp"
+                            android:text="@string/om_grenier"
+                            android:textColor="@color/black"
+                            android:visibility="invisible" />
+
+                        <Switch
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:gravity="right"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Third"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0"
+                    android:visibility="gone"
+                    android:background="@drawable/whitebody_bg"
+                    android:orientation="vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="20dp" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical"
+                        android:paddingLeft="20dp" >
+
+                        <TextView
+                            android:id="@+id/Info_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minWidth="100dp"
+                            android:singleLine="true"
+                            android:text="@string/om_edt_1"
+                            android:textColor="@color/black" />
+
+                        <EditText
+                            android:id="@+id/info_Edit"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:editable="false"
+                            android:focusable="false"
+                            android:hint=""
+                            android:textColor="@color/black" />
+
+                        <!--
+                             <EditText
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:editable="false"
+                            android:focusable="false"
+                            android:hint=""
+                            android:singleLine="true"
+                            android:textColor="@color/black" />
+
+
+
+                        -->
+
+                        <TextView
+                            android:id="@+id/Observation_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minWidth="100dp"
+                            android:singleLine="true"
+                            android:text="@string/om_edt_2"
+                            android:textColor="@color/black" />
+
+                        <EditText
+                            android:id="@+id/observation_EditText"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:editable="false"
+                            android:focusable="false"
+                            android:hint=""
+                            android:lines="5"
+                            android:textColor="@color/black" />
+
+                        <RadioGroup
+                            android:id="@+id/options"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="40dp"
+                            android:enabled="false" >
+
+                            <RadioButton
+                                android:id="@+id/opt1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:checked="true"
+                                android:clickable="false"
+                                android:enabled="false"
+                                android:singleLine="true"
+                                android:text="@string/om_radio1" />
+
+                            <RadioButton
+                                android:id="@+id/opt2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:clickable="false"
+                                android:enabled="false"
+                                android:singleLine="true"
+                                android:text="@string/om_radio2" />
+
+                            <RadioButton
+                                android:id="@+id/opt3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:clickable="false"
+                                android:enabled="false"
+                                android:singleLine="true"
+                                android:text="@string/om_radio3" />
+
+                            <RadioButton
+                                android:id="@+id/opt4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:clickable="false"
+                                android:enabled="false"
+                                android:singleLine="true"
+                                android:text="@string/om_radio4" />
+                        </RadioGroup>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

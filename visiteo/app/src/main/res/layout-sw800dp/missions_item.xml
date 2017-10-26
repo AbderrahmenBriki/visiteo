@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mis2_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal"
+    android:baselineAligned="false"
+    android:weightSum="12" >
+
+    <RelativeLayout
+        android:id="@+id/radiolayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="0.8"
+        android:clickable="true"
+        android:gravity="center" >
+
+        <RadioButton
+            android:id="@+id/mis1_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="11.2"
+        android:background="@color/light_line" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dip"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:weightSum="11.2" >
+
+            <ImageView
+                android:layout_width="@dimen/stroke_dim"
+                android:layout_height="fill_parent"
+                android:background="@color/light_line"
+                android:contentDescription="@string/img" />
+
+            <TextView
+                android:id="@+id/mis1_val_textview"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.8"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:textColor="@color/black1"
+                android:textSize="@dimen/mis_item_size" />
+
+            <ImageView
+                android:id="@+id/stroke1"
+                android:layout_width="@dimen/stroke_dim"
+                android:layout_height="fill_parent"
+                android:background="@color/light_line"
+                android:contentDescription="@string/img" />
+
+            <TextView
+                android:id="@+id/mis2_val_textview"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.8"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:textColor="@color/black1"
+                android:textSize="@dimen/mis_item_size" />
+
+            <ImageView
+                android:layout_width="@dimen/stroke_dim"
+                android:layout_height="fill_parent"
+                android:background="@color/light_line"
+                android:contentDescription="@string/img" />
+
+            <TextView
+                android:id="@+id/mis3_val_textview"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.8"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:textColor="@color/black1"
+                android:textSize="@dimen/mis_item_size" />
+
+            <ImageView
+                android:layout_width="@dimen/stroke_dim"
+                android:layout_height="fill_parent"
+                android:background="@color/light_line"
+                android:contentDescription="@string/img" />
+
+            <TextView
+                android:id="@+id/mis4_val_textview"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.4"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:textColor="@color/black1"
+                android:textSize="@dimen/mis_item_size" />
+
+            <ImageView
+                android:layout_width="@dimen/stroke_dim"
+                android:layout_height="fill_parent"
+                android:background="@color/light_line"
+                android:contentDescription="@string/img" />
+
+            <TextView
+                android:id="@+id/mis5_val_textview"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.4"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:textColor="@color/black1"
+                android:textSize="@dimen/mis_item_size" />
+
+            <ImageView
+                android:layout_width="@dimen/stroke_dim"
+                android:layout_height="fill_parent"
+                android:background="@color/light_line"
+                android:contentDescription="@string/img" />
+
+            <TextView
+                android:id="@+id/mis6_val_textview"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.7"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:textColor="@color/black1"
+                android:textSize="@dimen/mis_item_size" />
+
+            <ImageView
+                android:layout_width="@dimen/stroke_dim"
+                android:layout_height="fill_parent"
+                android:background="@color/light_line"
+                android:contentDescription="@string/img" />
+
+            <TextView
+                android:id="@+id/mis7_val_textview"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.2"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:textColor="@color/black1"
+                android:textSize="@dimen/mis_item_size" />
+
+            <ImageView
+                android:layout_width="@dimen/stroke_dim"
+                android:layout_height="fill_parent"
+                android:background="@color/light_line"
+                android:contentDescription="@string/img" />
+
+            <TextView
+                android:id="@+id/mis8_val_textview"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.7"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:textColor="@color/black1"
+                android:textSize="@dimen/mis_item_size" />
+
+            <ImageView
+                android:layout_width="@dimen/stroke_dim"
+                android:layout_height="fill_parent"
+                android:background="@color/light_line"
+                android:contentDescription="@string/img" />
+
+            <TextView
+                android:id="@+id/mis9_val_textview"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.7"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:textColor="@color/black1"
+                android:textSize="@dimen/mis_item_size" />
+
+            <ImageView
+                android:layout_width="@dimen/stroke_dim"
+                android:layout_height="fill_parent"
+                android:background="@color/light_line"
+                android:contentDescription="@string/img" />
+
+            <TextView
+                android:id="@+id/mis10_val_textview"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.7"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:textColor="@color/black1"
+                android:textSize="@dimen/mis_item_size" />
+
+            <ImageView
+                android:layout_width="@dimen/stroke_dim"
+                android:layout_height="fill_parent"
+                android:background="@color/light_line"
+                android:contentDescription="@string/img" />
+
+            <RelativeLayout
+                android:id="@+id/checkbox_layout"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:visibility="gone"
+                android:layout_weight="1.4"
+                android:clickable="true"
+                android:gravity="center" >
+
+                <CheckBox
+                    android:id="@+id/mis11_checkbox"
+                    android:layout_width="wrap_content"
+                    android:enabled="false"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="@dimen/stroke_dim"
+                android:layout_height="fill_parent"
+                android:background="@color/light_line"
+                android:visibility="gone"
+                android:contentDescription="@string/img" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

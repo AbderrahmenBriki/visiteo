@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mis2_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/piece_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="left"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dip"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:weightSum="22" >
+
+        <ImageView
+            android:layout_width="@dimen/stroke_dim"
+            android:layout_height="fill_parent"
+            android:background="@color/light_line"
+            android:contentDescription="@string/img" />
+
+        <TextView
+            android:id="@+id/piece_txt"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="3"
+            android:background="@color/light_bg"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/mis_val_size"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="@dimen/stroke_dim"
+            android:layout_height="fill_parent"
+            android:background="@color/light_line"
+            android:contentDescription="@string/img" />
+
+        <TextView
+            android:id="@+id/piece_type"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="3"
+            android:background="@color/light_bg"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="@string/piece_type"
+            android:textColor="@color/black"
+            android:textSize="@dimen/mis_val_size"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="@dimen/stroke_dim"
+            android:layout_height="fill_parent"
+            android:background="@color/light_line"
+            android:contentDescription="@string/img" />
+
+        <TextView
+            android:id="@+id/piece_qte"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/light_bg"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="@string/piece_qte"
+            android:textColor="@color/black"
+            android:textSize="@dimen/mis_val_size"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="@dimen/stroke_dim"
+            android:layout_height="fill_parent"
+            android:background="@color/light_line"
+            android:contentDescription="@string/img" />
+
+        <TextView
+            android:id="@+id/piece_tr"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/light_bg"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="@string/piece_tr"
+            android:textColor="@color/black"
+            android:textSize="@dimen/mis_val_size"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="@dimen/stroke_dim"
+            android:layout_height="fill_parent"
+            android:background="@color/light_line"
+            android:contentDescription="@string/img" />
+
+        <TextView
+            android:id="@+id/piece_nv"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/light_bg"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="@string/piece_nv"
+            android:textColor="@color/black"
+            android:textSize="@dimen/mis_val_size"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="@dimen/stroke_dim"
+            android:layout_height="fill_parent"
+            android:background="@color/light_line"
+            android:contentDescription="@string/img" />
+
+        <TextView
+            android:id="@+id/piece_nf"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/light_bg"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="@string/piece_nf"
+            android:textColor="@color/black"
+            android:textSize="@dimen/mis_val_size"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="@dimen/stroke_dim"
+            android:layout_height="fill_parent"
+            android:background="@color/light_line"
+            android:contentDescription="@string/img" />
+
+        <TextView
+            android:id="@+id/piece_be"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/light_bg"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="@string/piece_be"
+            android:textColor="@color/black"
+            android:textSize="@dimen/mis_val_size"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="@dimen/stroke_dim"
+            android:layout_height="fill_parent"
+            android:background="@color/light_line"
+            android:contentDescription="@string/img" />
+
+        <TextView
+            android:id="@+id/piece_eu"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/light_bg"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="@string/piece_eu"
+            android:textColor="@color/black"
+            android:textSize="@dimen/mis_val_size"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="@dimen/stroke_dim"
+            android:layout_height="fill_parent"
+            android:background="@color/light_line"
+            android:contentDescription="@string/img" />
+
+        <TextView
+            android:id="@+id/piece_me"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/light_bg"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="@string/piece_me"
+            android:textColor="@color/black"
+            android:textSize="@dimen/mis_val_size"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="@dimen/stroke_dim"
+            android:layout_height="fill_parent"
+            android:background="@color/light_line"
+            android:contentDescription="@string/img" />
+
+        <TextView
+            android:id="@+id/piece_hs"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/light_bg"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="@string/piece_hs"
+            android:textColor="@color/black"
+            android:textSize="@dimen/mis_val_size"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="@dimen/stroke_dim"
+            android:layout_height="fill_parent"
+            android:background="@color/light_line"
+            android:contentDescription="@string/img" />
+
+        <TextView
+            android:id="@+id/piece_observations"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="3"
+            android:background="@color/light_bg"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="@string/piece_observations"
+            android:textColor="@color/black"
+            android:textSize="@dimen/mis_val_size"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="@dimen/stroke_dim"
+            android:layout_height="fill_parent"
+            android:background="@color/light_line"
+            android:contentDescription="@string/img" />
+
+        <TextView
+            android:id="@+id/piece_nett"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.5"
+            android:background="@color/light_bg"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="@string/piece_nett"
+            android:textColor="@color/black"
+            android:textSize="@dimen/mis_val_size"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="@dimen/stroke_dim"
+            android:layout_height="fill_parent"
+            android:background="@color/light_line"
+            android:contentDescription="@string/img" />
+
+        <TextView
+            android:id="@+id/piece_reserve"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:background="@color/light_bg"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="@string/piece_reserve"
+            android:textColor="@color/black"
+            android:textSize="@dimen/mis_val_size"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="@dimen/stroke_dim"
+            android:layout_height="fill_parent"
+            android:background="@color/light_line"
+            android:contentDescription="@string/img" />
+
+        <TextView
+            android:id="@+id/piece_photo"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.5"
+            android:background="@color/light_bg"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="@string/piece_photo"
+            android:textColor="@color/black"
+            android:textSize="@dimen/mis_val_size"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="@dimen/stroke_dim"
+            android:layout_height="fill_parent"
+            android:background="@color/light_line"
+            android:contentDescription="@string/img" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dynamiclistitems1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_line"
+        android:contentDescription="@string/img" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dip"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:weightSum="22" >
+
+        <ImageView
+            android:layout_width="@dimen/stroke_dim"
+            android:layout_height="fill_parent"
+            android:background="@color/light_line"
+            android:contentDescription="@string/img" />
+
+        <TextView
+            android:id="@+id/piece_note"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="3"
+            android:background="@color/white"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="@string/piece_notes"
+            android:textColor="@color/black"
+            android:textSize="@dimen/mis_val_size"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="@dimen/stroke_dim"
+            android:layout_height="fill_parent"
+            android:background="@color/light_line"
+            android:contentDescription="@string/img" />
+
+        <TextView
+            android:id="@+id/piece_note_val"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="19"
+            android:background="@color/white"
+            android:gravity="left"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/mis_val_size"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="@dimen/stroke_dim"
+            android:layout_height="fill_parent"
+            android:background="@color/light_line"
+            android:contentDescription="@string/img" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_line"
+        android:contentDescription="@string/img" />
+
+</LinearLayout>

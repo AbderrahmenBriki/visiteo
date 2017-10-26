@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mis2_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="?android:attr/listPreferredItemHeightSmall"
+    android:layout_marginTop="1dip"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:weightSum="12" >
+
+    <ImageView
+        android:layout_width="@dimen/stroke_dim"
+        android:layout_height="fill_parent"
+        android:background="@color/light_line"
+        android:contentDescription="@string/img" />
+
+    <TextView
+        android:id="@+id/descriptionElement_TextView"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="2"
+        android:clickable="true"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:singleLine="true"
+        android:textColor="@color/black1"
+        android:textSize="@dimen/mis_item_size" />
+
+    <ImageView
+        android:id="@+id/stroke1"
+        android:layout_width="@dimen/stroke_dim"
+        android:layout_height="fill_parent"
+        android:background="@color/light_line"
+        android:contentDescription="@string/img" />
+
+    <TextView
+        android:id="@+id/typeElement_TextView"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="2.3"
+        android:clickable="true"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:singleLine="true"
+        android:textColor="@color/black1"
+        android:textSize="@dimen/mis_item_size" />
+
+    <ImageView
+        android:layout_width="@dimen/stroke_dim"
+        android:layout_height="fill_parent"
+        android:background="@color/light_line"
+        android:contentDescription="@string/img" />
+
+    <TextView
+        android:id="@+id/quantiteElement_TextView"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.40"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:textColor="@color/black1"
+        android:textSize="@dimen/mis_item_size"
+        android:descendantFocusability="beforeDescendants" />
+
+    <ImageView
+        android:layout_width="@dimen/stroke_dim"
+        android:layout_height="fill_parent"
+        android:background="@color/light_line"
+        android:contentDescription="@string/img" />
+
+    <TextView
+        android:id="@+id/etatElement_TextView"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_weight="0.50"
+        android:clickable="true"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:paddingLeft="5dp"
+        android:paddingTop="10dp"
+        android:singleLine="true"
+        android:textColor="@color/black1"
+        android:textSize="@dimen/mis_item_size"/>
+
+    <ImageView
+        android:layout_width="@dimen/stroke_dim"
+        android:layout_height="fill_parent"
+        android:background="@color/light_line"
+        android:contentDescription="@string/img" />
+
+    <TextView
+        android:id="@+id/ent_obervations_val"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="4.9"
+        android:clickable="true"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:singleLine="true"
+        android:textColor="@color/black1"
+        android:textSize="@dimen/mis_item_size" />
+
+    <ImageView
+        android:layout_width="@dimen/stroke_dim"
+        android:layout_height="fill_parent"
+        android:background="@color/light_line"
+        android:contentDescription="@string/img" />
+
+    <LinearLayout
+        android:id="@+id/imageLayout"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/photoElement_ImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:contentDescription="@string/img"
+            android:src="@drawable/photo_img" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="@dimen/stroke_dim"
+        android:layout_height="fill_parent"
+        android:background="@color/light_line"
+        android:contentDescription="@string/img" />
+
+    <TextView
+        android:id="@+id/trouElement_TextView"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.45"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="@string/zero"
+        android:textColor="@color/black1"
+        android:textSize="@dimen/mis_item_size"
+        android:descendantFocusability="beforeDescendants" />
+    
+    <ImageView
+        android:layout_width="@dimen/stroke_dim"
+        android:visibility="visible"
+        android:layout_height="fill_parent"
+        android:background="@color/light_line"
+        android:contentDescription="@string/img" />
+
+    <CheckBox
+        android:id="@+id/nettoyagelement_CheckBox"
+        android:layout_width="0dp"
+        android:visibility="visible"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" />
+
+    <ImageView
+        android:layout_width="@dimen/stroke_dim"
+        android:layout_height="fill_parent"
+        android:background="@color/light_line"
+        android:contentDescription="@string/img" />
+
+    <TextView
+        android:id="@+id/actionElement_TextView"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="0"
+        android:visibility="gone"
+        android:clickable="true"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:singleLine="true"
+        android:textColor="@color/black1"
+        android:textSize="@dimen/mis_item_size" />
+
+    <ImageView
+        android:layout_width="@dimen/stroke_dim"
+        android:layout_height="fill_parent"
+        android:background="@color/light_line"
+        android:contentDescription="@string/img" />
+
+</LinearLayout>

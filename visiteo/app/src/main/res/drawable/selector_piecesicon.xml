@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/entree" android:state_pressed="true" android:textColor="@color/green"/>
+    <item android:drawable="@drawable/entree" android:state_focused="true" android:textColor="@color/green"/>
+    <item android:drawable="@drawable/cave_img" android:textColor="@color/bluetxt"/>
+
+</selector>

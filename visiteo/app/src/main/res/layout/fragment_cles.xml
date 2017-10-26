@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/light_bg_all"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/total_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal" >
+
+            <ImageView
+                android:id="@+id/key_img"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:padding="30dp"
+                android:contentDescription="@string/img"
+                android:clickable="true"
+                android:src="@drawable/photo_img" />
+
+            <TextView
+                android:id="@+id/total_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/key_img"
+                android:gravity="center"
+                android:text="@string/cls_total1"
+                android:textColor="@color/black1"
+                android:textSize="24sp" />
+            
+            <TextView
+                android:id="@+id/total_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/total_label"
+                android:gravity="center"
+                android:text="@string/zero"
+                android:textColor="@color/black1"
+                android:textSize="24sp" />
+            
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/list_layout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/total_layout"
+            android:gravity="center_horizontal" >
+
+            <LinearLayout
+                android:id="@+id/dynamiclistitems1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+            
+            <ListView 
+                android:id="@+id/clefs_list_view"
+                android:layout_width="fill_parent"
+                android:layout_height="315dp" />
+            
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/list_layout1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/addClefs_Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/selector_button"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/cls_ajouter"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

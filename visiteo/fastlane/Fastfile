@@ -1,0 +1,62 @@
+fastlane_version "2.3.1"
+
+default_platform :android
+
+#Crashlytics
+ENV['CRASHLYTICS_API_TOKEN']        = "4371c20c542264b3d345b615ab4de043fdd854a3"
+ENV['CRASHLYTICS_BUILD_SECRET']     = "1e84ad2ac96b03a30d6fade79cdd44ef64ebd67bfd03c33480eba55be1305e7b"
+ENV['CRASHLYTICS_GROUPS']           = "Opera"
+
+#Slack
+ENV['SLACK_URL']                    = "https://hooks.slack.com/services/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"
+ENV['FL_SLACK_CHANNEL']             = "#opera"
+
+desc "This lane builds an APK, submit it to Fabric and add a message in the Opera slack channel"
+  lane :client_release do
+
+    increment_version_code()
+  
+	gradle(
+		task: 'assemble',
+		build_type: 'Release'
+	)
+
+	ApkPath = lane_context[SharedValues:: GRADLE_APK_OUTPUT_PATH]
+	
+	# Ask the user of fastlane to enter a changelog
+    changelog = prompt(text: "Enter the release note for Crashlytics: ",
+                       multi_line_end_keyword: "END")
+
+
+    crashlytics(
+     	apk_path: ApkPath,
+		notes: changelog
+    )
+
+    # Send the generated IPA to Apps Beta
+    request = "curl -i -F \"apk=@#{ApkPath}\" -X \"POST\" \"https://appli-mobile.fr/applications/uploader/fastlane/android/\""
+
+    sh "#{request}"
+
+
+    VersionName = get_version_name
+
+    VersionCode = get_version_code
+      
+	slackMessageString = "🚀🚀🚀 New version of CEL #{VersionName} (#{VersionCode}) available on Fabric 🚀🚀🚀"
+	
+	slack(
+		message: slackMessageString,
+		default_payloads: [],
+		payload: {
+		    "Changes" => changelog
+		}
+	)
+
+	# Commit, tag and push to git
+    git_add(path: ".")
+    git_commit(path: ".", message: "Version bump")
+    add_git_tag(prefix: "build.")
+    push_to_git_remote
+
+end

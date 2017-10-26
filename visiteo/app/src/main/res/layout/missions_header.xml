@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mis2_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal"
+    android:paddingTop="35dp"
+    android:weightSum="12" >
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.8"
+        android:clickable="false"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="@string/mis_heure"
+        android:textSize="@dimen/mis_val_size"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="11.2"
+        android:background="@color/light_line"
+        android:clickable="false" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dip"
+            android:background="@color/white"
+            android:clickable="false"
+            android:orientation="horizontal"
+            android:weightSum="11.2" >
+
+            <ImageView
+                android:layout_width="@dimen/stroke_dim"
+                android:layout_height="fill_parent"
+                android:background="@color/light_line"
+                android:contentDescription="@string/img" />
+
+            <TextView
+                android:id="@+id/mis1_header_textview"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.8"
+                android:background="@color/light_bg"
+                android:clickable="false"
+                android:gravity="left|center_vertical"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="@string/mis_heure"
+                android:textColor="@color/black"
+                android:textSize="@dimen/mis_val_size"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="@dimen/stroke_dim"
+                android:layout_height="fill_parent"
+                android:background="@color/light_line"
+                android:contentDescription="@string/img" />
+
+            <TextView
+                android:id="@+id/mis2_header_textview"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.8"
+                android:background="@color/light_bg"
+                android:clickable="false"
+                android:gravity="left|center_vertical"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="@string/mis_rdv"
+                android:textColor="@color/black"
+                android:textSize="@dimen/mis_val_size"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="@dimen/stroke_dim"
+                android:layout_height="fill_parent"
+                android:background="@color/light_line"
+                android:contentDescription="@string/img" />
+
+            <TextView
+                android:id="@+id/mis3_header_textview"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.8"
+                android:background="@color/light_bg"
+                android:clickable="false"
+                android:gravity="left|center_vertical"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="@string/mis_pieces"
+                android:textColor="@color/black"
+                android:textSize="@dimen/mis_val_size"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="@dimen/stroke_dim"
+                android:layout_height="fill_parent"
+                android:background="@color/light_line"
+                android:contentDescription="@string/img" />
+
+            <TextView
+                android:id="@+id/mis4_header_textview"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.4"
+                android:background="@color/light_bg"
+                android:clickable="false"
+                android:gravity="left|center_vertical"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="@string/mis_adresse"
+                android:textColor="@color/black"
+                android:textSize="@dimen/mis_val_size"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="@dimen/stroke_dim"
+                android:layout_height="fill_parent"
+                android:background="@color/light_line"
+                android:contentDescription="@string/img" />
+
+            <TextView
+                android:id="@+id/mis5_header_textview"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.4"
+                android:background="@color/light_bg"
+                android:clickable="false"
+                android:gravity="left|center_vertical"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="@string/mis_adresse1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/mis_val_size"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="@dimen/stroke_dim"
+                android:layout_height="fill_parent"
+                android:background="@color/light_line"
+                android:contentDescription="@string/img" />
+
+            <TextView
+                android:id="@+id/mis6_header_textview"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.7"
+                android:background="@color/light_bg"
+                android:clickable="false"
+                android:gravity="left|center_vertical"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="@string/mis_cp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/mis_val_size"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="@dimen/stroke_dim"
+                android:layout_height="fill_parent"
+                android:background="@color/light_line"
+                android:contentDescription="@string/img" />
+
+            <TextView
+                android:id="@+id/mis7_header_textview"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.2"
+                android:background="@color/light_bg"
+                android:clickable="false"
+                android:gravity="left|center_vertical"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="@string/mis_ville"
+                android:textColor="@color/black"
+                android:textSize="@dimen/mis_val_size"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="@dimen/stroke_dim"
+                android:layout_height="fill_parent"
+                android:background="@color/light_line"
+                android:contentDescription="@string/img" />
+
+            <TextView
+                android:id="@+id/mis8_header_textview"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.7"
+                android:background="@color/light_bg"
+                android:clickable="false"
+                android:gravity="left|center_vertical"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="@string/mis_etage"
+                android:textColor="@color/black"
+                android:textSize="@dimen/mis_val_size"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="@dimen/stroke_dim"
+                android:layout_height="fill_parent"
+                android:background="@color/light_line"
+                android:contentDescription="@string/img" />
+
+            <TextView
+                android:id="@+id/mis9_header_textview"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.7"
+                android:background="@color/light_bg"
+                android:clickable="false"
+                android:gravity="left|center_vertical"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="@string/mis_digicode"
+                android:textColor="@color/black"
+                android:textSize="@dimen/mis_val_size"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="@dimen/stroke_dim"
+                android:layout_height="fill_parent"
+                android:background="@color/light_line"
+                android:contentDescription="@string/img" />
+
+            <TextView
+                android:id="@+id/mis10_header_textview"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.7"
+                android:background="@color/light_bg"
+                android:clickable="false"
+                android:gravity="left|center_vertical"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="@string/mis_client"
+                android:textColor="@color/black"
+                android:textSize="@dimen/mis_val_size"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="@dimen/stroke_dim"
+                android:layout_height="fill_parent"
+                android:background="@color/light_line"
+                android:contentDescription="@string/img" />
+
+            <TextView
+                android:id="@+id/mis11_header_textview"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.4"
+                android:background="@color/light_bg"
+                android:clickable="false"
+                android:gravity="left|center_vertical"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="@string/mis_edl"
+                android:visibility="gone"
+                android:textColor="@color/black"
+                android:textSize="@dimen/mis_val_size"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="@dimen/stroke_dim"
+                android:layout_height="fill_parent"
+                android:visibility="gone"
+                android:background="@color/light_line"
+                android:contentDescription="@string/img" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

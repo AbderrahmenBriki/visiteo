@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:shrinkColumns="*"
+    android:stretchColumns="*" >
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_span="4"
+            android:background="@drawable/border_green"
+            android:padding="@dimen/cell_padding"
+            android:text="@string/tb_reference"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/white" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" >
+
+        <TextView
+            android:layout_span="2"
+            android:background="@drawable/border_gray"
+            android:gravity="left"
+            android:padding="@dimen/cell_padding"
+            android:text="@string/tb_client"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_span="2"
+            android:background="@drawable/border_gray"
+            android:gravity="left"
+            android:padding="@dimen/cell_padding"
+            android:text="@string/tb_lieu"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:background="@drawable/border_white"
+            android:gravity="right"
+            android:padding="@dimen/cell_padding"
+            android:text="@string/tb_nom"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/nomval"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:background="@drawable/border_white"
+            android:gravity="left"
+            android:padding="@dimen/cell_padding"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:background="@drawable/border_white"
+            android:gravity="right"
+            android:padding="@dimen/cell_padding"
+            android:text="@string/tb_adresse"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/adresseval"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:background="@drawable/border_white"
+            android:gravity="left"
+            android:padding="@dimen/cell_padding"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:background="@drawable/border_white"
+            android:gravity="right"
+            android:padding="@dimen/cell_padding"
+            android:text="@string/tb_rdv"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/rdvval"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:background="@drawable/border_white"
+            android:gravity="left"
+            android:padding="@dimen/cell_padding"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:background="@drawable/border_white"
+            android:gravity="right"
+            android:padding="@dimen/cell_padding"
+            android:text="@string/tb_cp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/cpval"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:background="@drawable/border_white"
+            android:gravity="left"
+            android:padding="@dimen/cell_padding"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:background="@drawable/border_white"
+            android:gravity="right"
+            android:padding="@dimen/cell_padding"
+            android:text="@string/tb_date"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/dateval"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:background="@drawable/border_white"
+            android:gravity="left"
+            android:padding="@dimen/cell_padding"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:background="@drawable/border_white"
+            android:gravity="right"
+            android:padding="@dimen/cell_padding"
+            android:text="@string/tb_digicode"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/digicodeval"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:background="@drawable/border_white"
+            android:gravity="left"
+            android:padding="@dimen/cell_padding"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:background="@drawable/border_white"
+            android:gravity="right"
+            android:padding="@dimen/cell_padding"
+            android:text="@string/tb_heure"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/heureval"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:background="@drawable/border_white"
+            android:gravity="left"
+            android:padding="@dimen/cell_padding"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:background="@drawable/border_white"
+            android:gravity="right"
+            android:padding="@dimen/cell_padding"
+            android:text="@string/tb_etage"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/etageval"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:background="@drawable/border_white"
+            android:gravity="left"
+            android:padding="@dimen/cell_padding"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:background="@drawable/border_white"
+            android:gravity="right"
+            android:padding="@dimen/cell_padding"
+            android:text="@string/tb_expert"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/expertval"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:background="@drawable/border_white"
+            android:gravity="left"
+            android:padding="@dimen/cell_padding"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:background="@drawable/border_white"
+            android:gravity="right"
+            android:padding="@dimen/cell_padding"
+            android:text="@string/tb_type"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/typeval"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:background="@drawable/border_white"
+            android:gravity="left"
+            android:padding="@dimen/cell_padding"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:background="@drawable/border_white"
+            android:gravity="right"
+            android:padding="@dimen/cell_padding"
+            android:text="@string/tb_immeuble"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/immeuble_TextView"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:background="@drawable/border_white"
+            android:gravity="left"
+            android:padding="@dimen/cell_padding"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:background="@drawable/border_white"
+            android:gravity="right"
+            android:padding="@dimen/cell_padding"
+            android:text="@string/tb_proprietaire"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/proprietaireval"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:background="@drawable/border_white"
+            android:gravity="left"
+            android:padding="@dimen/cell_padding"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:background="@drawable/border_white"
+            android:gravity="right"
+            android:padding="@dimen/cell_padding"
+            android:text="@string/tb_lot"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/lot_TextView"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:background="@drawable/border_white"
+            android:gravity="left"
+            android:padding="@dimen/cell_padding"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:background="@drawable/border_white"
+            android:gravity="right"
+            android:padding="@dimen/cell_padding"
+            android:text="@string/tb_mandat"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/mandat_TextView"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:background="@drawable/border_white"
+            android:gravity="left"
+            android:padding="@dimen/cell_padding"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+    </TableRow>
+</TableLayout>

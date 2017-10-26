@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bga"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/light_bg_all"
+        android:fadingEdge="none"
+        android:paddingBottom="20dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="20dp"
+        android:scrollbars="none"
+        android:layout_below="@+id/liner_layout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/missionlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:shrinkColumns="*"
+                    android:stretchColumns="*" >
+
+                    <!-- Table 1 -->
+
+                    <include layout="@layout/post_table1" />
+
+                    <!-- Table 2 -->
+
+                    <include layout="@layout/post_table2" />
+
+                    <!-- Table 3 -->
+
+                    <include layout="@layout/post_table3" />
+                </TableLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/dynamicitemscles"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/missionlayout"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:id="@+id/dynamiclistitems"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dynamicitemscles"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical" />
+
+            <RelativeLayout
+                android:id="@+id/sing_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dynamiclistitems"
+                android:layout_marginRight="150dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+
+                <TextView
+                    android:id="@+id/comment_entrant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/clear_entrant"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/selector_button"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="@string/cls_commentaire"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/valider_entrant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="60dp"
+                    android:background="@drawable/selector_button"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="@string/valider"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/clear_entrant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/valider_entrant"
+                    android:background="@drawable/selector_button"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="@string/clear"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/title_entrant"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:layout_toLeftOf="@+id/clear_entrant"
+                    android:gravity="left|center_vertical"
+                    android:padding="10dp"
+                    android:text="@string/entrant"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="@color/black" />
+
+                <CheckBox
+                    android:id="@+id/checkBox_refusEntrant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/title_entrant"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginRight="60dp"
+                    android:text="@string/refus_de_signer" />
+
+                <CheckBox
+                    android:id="@+id/check_approuve_entrant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/title_entrant"
+                    android:layout_toRightOf="@+id/checkBox_refusEntrant"
+                    android:text="@string/lu_approuve" />
+
+                <RelativeLayout
+                    android:id="@+id/entrant"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_below="@+id/checkBox_refusEntrant"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginRight="60dp"
+                    android:layout_marginTop="10dp"
+                    android:clickable="true"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/entrantLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/login_bg"
+                        android:orientation="vertical" />
+
+                    <ImageView
+                        android:id="@+id/entrantview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/login_bg"
+                        android:contentDescription="@string/img"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/comment_sortant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/entrant"
+                    android:layout_toLeftOf="@+id/clear_sortant"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/selector_button"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="@string/cls_commentaire"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/valider_sortant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/entrant"
+                    android:layout_marginRight="60dp"
+                    android:background="@drawable/selector_button"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="@string/valider"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/clear_sortant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/entrant"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/valider_sortant"
+                    android:background="@drawable/selector_button"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="@string/clear"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/title_sortant"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/clear_sortant"
+                    android:layout_below="@+id/entrant"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toLeftOf="@+id/clear_sortant"
+                    android:gravity="left|center_vertical"
+                    android:padding="10dp"
+                    android:text="@string/sortant"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="@color/black" />
+
+                <CheckBox
+                    android:id="@+id/checkBox_refusSortant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/title_sortant"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginRight="60dp"
+                    android:text="@string/refus_de_signer" />
+
+                <CheckBox
+                    android:id="@+id/check_approuve_sortant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/title_sortant"
+                    android:layout_toRightOf="@+id/checkBox_refusSortant"
+                    android:text="@string/lu_approuve" />
+
+                <RelativeLayout
+                    android:id="@+id/sortant"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_below="@+id/checkBox_refusSortant"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginRight="60dp"
+                    android:layout_marginTop="10dp"
+                    android:clickable="true"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/sortantLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/login_bg"
+                        android:orientation="vertical" />
+
+                    <ImageView
+                        android:id="@+id/sortantview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/login_bg"
+                        android:contentDescription="@string/img"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/comment_opera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sortant"
+                    android:layout_toLeftOf="@+id/clear_opera"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/selector_button"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="@string/cls_commentaire"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/valider_opera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/sortant"
+                    android:layout_marginRight="60dp"
+                    android:background="@drawable/selector_button"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="@string/valider"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/clear_opera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sortant"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/valider_opera"
+                    android:background="@drawable/selector_button"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="@string/clear"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/title_opera"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/clear_opera"
+                    android:layout_below="@+id/sortant"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toLeftOf="@+id/clear_opera"
+                    android:gravity="left|center_vertical"
+                    android:padding="10dp"
+                    android:text="@string/opera"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="@color/black" />
+
+                <CheckBox
+                    android:id="@+id/check_approuve_opera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/title_opera"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginRight="60dp"
+                    android:text="@string/lu_approuve" />
+
+                <RelativeLayout
+                    android:id="@+id/opera"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_below="@+id/check_approuve_opera"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginRight="60dp"
+                    android:layout_marginTop="10dp"
+                    android:clickable="true"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/operaLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/login_bg"
+                        android:orientation="vertical" />
+
+                    <ImageView
+                        android:id="@+id/operaview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/login_bg"
+                        android:contentDescription="@string/img"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/progressBar_loading"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/liner_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/see_all_photos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/selector_button1"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="callPhotosView"
+            android:text="@string/see_all_photos"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/valider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/selector_button1"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="callValider"
+            android:text="@string/envoyer"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:visibility="visible"  />
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/valider"
+            android:background="@drawable/selector_button"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="callCancel"
+            android:text="@string/fermer"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:visibility="visible"  />
+    </RelativeLayout>
+
+</RelativeLayout>
