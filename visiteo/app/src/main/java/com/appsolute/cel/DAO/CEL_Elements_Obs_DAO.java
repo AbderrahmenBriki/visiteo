@@ -46,7 +46,7 @@ public class CEL_Elements_Obs_DAO extends CEL_Database_DAO {
 	}
 
 	/**
-	 * Delete a CEL_Elements_Obs value from an Id
+	 * Delete a CEL_Elements_Obs value from an Id test
 	 * @param idElements_Obs
 	 */
 	public void deleteValue(int idElements_Obs) {
